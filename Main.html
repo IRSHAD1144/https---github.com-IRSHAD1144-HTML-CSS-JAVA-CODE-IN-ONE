@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar with Profile</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f4f6;
+            min-block-size: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: lightblue;
+        }
+
+        .logo {
+            inline-size: 200px;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .button {
+            padding: 8px 15px;
+            background: #3B82F6;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #2563EB;
+        }
+
+        .avatar {
+            inline-size: 40px;
+            block-size: 40px;
+            border-radius: 50%;
+            border: 2px solid #d4af37;
+            box-shadow: 0 0 8px #d4af37;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .nav {
+            block-size: 60px;
+            background: linear-gradient(135deg, #f87171, #34d399, #facc15);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .main {
+            flex: 1;
+        
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #1E293B;
+            color: #E5E7EB;
+            font-size: 14px;
+        }
+       
+        .cards {
+    display: grid;
+    justify-content: center;
+     grid-template-columns: repeat(3, 1fr);
+    gap: 30px; 
+    margin-block-start: 30px;
+}
+
+.card {
+    inline-size: 200px;
+    block-size: 150px;
+  background: linear-gradient(135deg, #f87171, #34d399, #facc15);
+   color:  white;
+    text-shadow: 0 0 2px rgb(0, 0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid #d4af37;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.card:hover {
+   background: linear-gradient(135deg, #f87171, #34d399, #facc15);
+    color: black;
+}
+ .button1{
+            padding: 8px 15px;
+           background: linear-gradient(135deg, #f87171, #34d399, #facc15);
+            color: white;
+            text-shadow: 0 0 2px rgb(0, 0,0,0.5);
+            border-color: #d4af37;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+
+   
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+
+        <div class="nav-right">
+            <label for="upload">
+                <img src="boy user.png" id="avatar" class="avatar">
+            </label>
+            <input type="file" id="upload" accept="image/*" hidden>
+
+            <a href="login.html">
+                <button class="button">Login</button>
+            </a>
+        </div>
+    </header>
+
+  
+    <div class="nav">
+        <span>Menu</span>
+        <a href="languages.html">
+            <button class="button">Select Language</button>
+        </a>
+    </div>
+
+
+<div class="main">
+    <div class="cards">
+        <div class="card html"><a href="HTML.html" ><button class="button1">HTML</button></a></div>
+        <div class="card css"><a href="CSS.html"><button class="button1">CSS</button></a></div>
+        <div class="card java"><a href="JAVA.html"><button class="button1">JSS</button></a></div><br>
+     
+       
+    </div>
+</div>
+
+    <footer>
+        &copy; 2026 C1 Codes. All rights reserved.
+    </footer>
+
+    <script>
+        const upload = document.getElementById("upload");
+        const avatar = document.getElementById("avatar");
+
+        upload.addEventListener("change", function () {
+            const file = this.files[0];
+            if (file) {
+                avatar.src = URL.createObjectURL(file);
+            }
+        });
+        
+   
+    </script>
+
+</body>
+
+</html>

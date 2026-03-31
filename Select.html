@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language</title>
+
+    <style>
+        body {
+            block-size: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background:  #f3f4f6;
+        }
+
+        .logo {
+            inline-size: 200px;
+            margin-block-end: 20px;
+        }
+
+        .parent {
+            block-size: 450px;
+            inline-size: 450px;
+            background: #f3f4f6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 3px solid #34d399 ; 
+            position: relative;
+            gap: 2px;
+        }
+
+        .hello {
+            block-size: 300px;
+            inline-size: 300px;
+            border: 3px solid#f87171 ;
+            border-radius: 50%;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+        .button1 {
+    position: absolute;
+    padding: 9px 16px;
+    background:#f87171 ;
+    color: white;
+    border:2px solid ;
+    border-radius: 50% ;
+    cursor: pointer;
+}
+        .html{
+            inset-block-start:0;
+            inset-inline-start:50% ;
+            transform:translate(-50%,5%) ;
+        } .button2 {
+    position: absolute;
+    padding: 9px 16px;
+    background:#facc15 ;
+    color: white;
+    border:2px solid #f87171;
+    border-radius: 50% ;
+    cursor: pointer;
+}
+        .java{
+            inset-inline-start: 0;
+            inset-block-start: 50%;
+            transform: translate(5%,-50%);
+        }
+         .button3{
+    position: absolute;
+    padding: 9px 16px;
+    background:#34d399 ;
+    color: white;
+    border:2px solid #facc15 ;
+    border-radius: 50% ;
+    cursor: pointer;
+}
+        /*rohmbus codes for 5*/
+        .rhombus1{
+            position: fixed;
+            block-size: 725px;
+            inline-size:750px;
+           position: absolute;
+           border: 2px solid #f87171;
+           inset-block-start: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+          z-index: -1;
+            animation:rotate 15s linear infinite;
+        }
+        @keyframes rotate{
+    from{transform:translate(-50%,-50%) rotate(0deg);}
+    to{transform:translate(-50%,-50%) rotate(360deg);}
+}
+        .rhombus2{
+              position: fixed;
+            block-size: 700px;
+            inline-size:700px;
+           position: absolute;
+           border: 2px solid #34d399;
+           inset-block-start: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+          z-index: -1;
+            animation:rotate 15s linear infinite;
+        }
+        @keyframes rotate{
+    from{transform:translate(-50%,-50%) rotate(0deg);}
+    to{transform:translate(-50%,-50%) rotate(360deg);}
+}
+        .rhombus3{
+              position: fixed;
+            block-size: 675px;
+            inline-size:675px;
+           position: absolute;
+           border: 2px solid #facc15;
+           inset-block-start: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+          z-index: -1;
+            animation:rotate 15s linear infinite;
+        }
+        @keyframes rotate{
+    from{transform:translate(-50%,-50%) rotate(0deg);}
+    to{transform:translate(-50%,-50%) rotate(360deg);}
+}
+         .rhombus4{
+              position: fixed;
+            block-size: 650px;
+            inline-size:650px;
+           position: absolute;
+           border: 2px solid #f87171;
+           inset-block-start: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+          z-index: -1;
+            animation:rotate 15s linear infinite;
+        }
+        @keyframes rotate{
+    from{transform:translate(-50%,-50%) rotate(0deg);}
+    to{transform:translate(-50%,-50%) rotate(360deg);}
+}
+       .rhombus5{
+              position: fixed;
+            block-size: 625px;
+            inline-size:625px;
+           position: absolute;
+           border: 2px solid #34d399;
+           inset-block-start: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+          z-index: -1;
+            animation:rotate 15s linear infinite;
+        }
+        @keyframes rotate{
+    from{transform:translate(-50%,-50%) rotate(0deg);}
+    to{transform:translate(-50%,-50%) rotate(360deg);}
+}
+  .rhombus6{
+              position: fixed;
+            block-size: 600px;
+            inline-size:600px;
+           position: absolute;
+           border: 2px solid #facc15;
+           inset-block-start: 50%;
+    inset-inline-start: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+          z-index: -1;
+            animation:rotate 15s linear infinite;
+        }
+        @keyframes rotate{
+    from{transform:translate(-50%,-50%) rotate(0deg);}
+    to{transform:translate(-50%,-50%) rotate(360deg);}
+}
+    </style>
+</head>
+
+<body>
+    <div class="rhombus1">
+        <div class="rhombus2">
+            <div class="rhombus3">
+                <div class="rhombus4">
+                    <div class="rhombus5">
+                        <div class="rhombus6"></div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+    </header>
+
+    <div class="parent">
+        <div class="hello"> 
+            </div>
+        <div class="container">
+            <a href="HTML.html"><button class="button1 html">HTML</button></a>
+            <a href="JAVA.html"><button class="button2 java">JAVA</button></a>
+            <a href="CSS.html"><button class="button3 css">CSS</button></a>
+        </div>
+    
+    </div>
+
+</body>
+
+</html>
