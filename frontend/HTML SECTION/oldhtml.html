@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old & Obsolete HTML Tags | Complete Museum | Code in One</title>
+    <link rel="stylesheet" href="html.css">
+</head>
+<body>
+
+<header>
+<img src="/images/logo.png" alt="Logo" class="logo" width="200" height="50">
+    <div class="nav-right">
+        <button class="home-btn" onclick="window.location.href='#'">HTML5</button>
+        <button class="home-btn" onclick="window.location.href='#'">Home</button>
+    </div>
+</header>
+
+<div class="nav">
+    <h2> OLD & EVOLVED HTML TAGS MUSEUM</h2>
+</div>
+
+
+<div class="sidebar">
+    <div class="he he-title">ALL OLD TAGS</div> 
+
+    <div class="he he-title"> OLDTAGS NOT SUPPORTED</div>
+    <div class="he1" onclick="scrollToSection('plaintext')">&lt;plaintext&gt;</div>
+    <div class="he1" onclick="scrollToSection('listing')">&lt;listing&gt;</div>
+    <div class="he1" onclick="scrollToSection('xmp')">&lt;xmp&gt;</div>
+    <div class="he1" onclick="scrollToSection('isindex')">&lt;isindex&gt;</div>
+    <div class="he1" onclick="scrollToSection('nextid')">&lt;nextid&gt;</div>
+    <div class="he1" onclick="scrollToSection('keygen')">&lt;keygen&gt;</div>
+    <div class="he1" onclick="scrollToSection('spacer')">&lt;spacer&gt;</div>
+    <div class="he1" onclick="scrollToSection('bgsound')">&lt;bgsound&gt;</div>
+    <div class="he1" onclick="scrollToSection('marquee')">&lt;marquee&gt;</div>
+    <div class="he1" onclick="scrollToSection('blink')">&lt;blink&gt;</div>
+    <div class="he1" onclick="scrollToSection('frame')">&lt;frame&gt;</div>
+    <div class="he1" onclick="scrollToSection('frameset')">&lt;frameset&gt;</div>
+    <div class="he1" onclick="scrollToSection('noframes')">&lt;noframes&gt;</div>
+    <div class="he1" onclick="scrollToSection('applet')">&lt;applet&gt;</div>
+    <div class="he1" onclick="scrollToSection('embed-old')">&lt;embed&gt; (old)</div>
+    <div class="he1" onclick="scrollToSection('noembed')">&lt;noembed&gt;</div>
+    <div class="he1" onclick="scrollToSection('acronym')">&lt;acronym&gt;</div>
+    <div class="he1" onclick="scrollToSection('basefont')">&lt;basefont&gt;</div>
+    <div class="he1" onclick="scrollToSection('big')">&lt;big&gt;</div>
+    <div class="he1" onclick="scrollToSection('center')">&lt;center&gt;</div>
+    <div class="he1" onclick="scrollToSection('font')">&lt;font&gt;</div>
+    <div class="he1" onclick="scrollToSection('strike')">&lt;strike&gt;</div>
+    <div class="he1" onclick="scrollToSection('tt')">&lt;tt&gt;</div>
+    
+    <div class="he he-title">  REPLACEMENT OLD TO NEW </div>
+    <div class="he1" onclick="scrollToSection('b')">&lt;b&gt; → &lt;strong&gt;</div>
+    <div class="he1" onclick="scrollToSection('i')">&lt;i&gt; → &lt;em&gt;</div>
+    <div class="he1" onclick="scrollToSection('u')">&lt;u&gt; → CSS</div>
+    <div class="he1" onclick="scrollToSection('menu-old')">&lt;menu&gt; → &lt;ul&gt;</div>
+    <div class="he1" onclick="scrollToSection('dir')">&lt;dir&gt; → &lt;ul&gt;</div>
+    <div class="he1" onclick="scrollToSection('pre')">&lt;pre&gt; → &lt;code&gt;</div>
+</div>
+
+<main class="main-content">
+    <h2 style="color: #dc2626; text-align: center;">OBSOLETE TAGS (REMOVED)</h2>
+    <p style="margin-block-end: 20px; text-align: center;">These tags are removed from modern HTML. Browsers may still support them, but <strong>DO NOT USE</strong> in new websites.</p>
+
+    <div id="plaintext" class="main20">
+        <div class="main11">
+            <span class="badge-year">Added: 1991 | Removed: HTML5</span>
+            <h2>&lt;plaintext&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> Security risk and poor design. Everything after it became unrenderable HTML.
+        </div><br>
+        <div class="main11">
+            <h4>Old way:</h4> &lt;plaintext&gt;This is just text &lt;b&gt;bold won't work&lt;/b&gt;
+        </div>
+    </div>
+
+
+    <div id="listing" class="main21">
+        <div class="main12">
+            <span class="badge-year">Added: 1991 | Removed: HTML5</span>
+            <h2>&lt;listing&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> Redundant, replaced by &lt;pre&gt; and CSS.
+        </div><br>
+        <div class="main12">
+            <h4>Old way:</h4> &lt;listing&gt; indented text &lt;/listing&gt;
+        </div>
+    </div>
+
+    <div id="xmp" class="main22">
+        <div class="main13">
+            <span class="badge-year">Added: 1991 | Removed: HTML5</span>
+            <h2>&lt;xmp&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> Treated everything as literal text, broke page parsing. Use &lt;pre&gt;&lt;code&gt; instead.
+        </div><br>
+        <div class="main13">
+            <h4>Old way:</h4> &lt;xmp&gt;This &lt;b&gt;bold&lt;/b&gt; will not be bold.&lt;/xmp&gt;
+        </div>
+    </div>
+
+    <div id="isindex" class="main20">
+        <div class="main11">
+            <span class="badge-year">Added: 1991 | Removed: HTML5</span>
+            <h2>&lt;isindex&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> Obsolete search input. Use &lt;input type="search"&gt;.
+        </div><br>
+        <div class="main11">
+            <h4>Old way:</h4> &lt;isindex&gt;
+        </div>
+    </div>
+
+    <div id="nextid" class="main21">
+        <div class="main12">
+            <span class="badge-year">Added: 1991 | Removed: HTML5</span>
+            <h2>&lt;nextid&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> NeXTSTEP editor feature, never standard.
+        </div><br>
+        <div class="main12">
+            <h4>Old way:</h4> &lt;nextid n=27&gt;
+        </div>
+    </div>
+
+    <div id="keygen" class="main22">
+        <div class="main13">
+            <span class="badge-year">Added: HTML5 | Removed: HTML5.1</span>
+            <h2>&lt;keygen&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> Security and complexity. Use Web Crypto API.
+        </div><br>
+        <div class="main13">
+            <h4>Old way:</h4> &lt;keygen name="security"&gt;
+        </div>
+    </div>
+
+    <div id="spacer" class="main20">
+        <div class="main11">
+            <span class="badge-year">Added: 1990s | Removed: HTML5</span>
+            <h2>&lt;spacer&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> Presentational, CSS margin/padding replaces it.
+        </div><br>
+        <div class="main11">
+            <h4>Old way:</h4> &lt;spacer type="horizontal" size="50"&gt;
+        </div>
+    </div>
+
+    <div id="bgsound" class="main21">
+        <div class="main12">
+            <span class="badge-year">Added: IE only | Removed: HTML5</span>
+            <h2>&lt;bgsound&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> Autoplay background sound, user hostile. Use &lt;audio&gt; with user gesture.
+        </div><br>
+        <div class="main12">
+            <h4>Old way:</h4> &lt;bgsound src="music.mid" loop="infinite"&gt;
+        </div>
+    </div>
+
+    <div id="marquee" class="main22">
+        <div class="main13">
+            <span class="badge-year">Added: IE only | Removed: HTML5</span>
+            <h2>&lt;marquee&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> Annoying scrolling text, never standard. Use CSS animations sparingly.
+        </div><br>
+        <div class="main13">
+            <h4>Old way:</h4> &lt;marquee&gt;Scrolling text&lt;/marquee&gt;
+        </div>
+    </div>
+
+    <div id="blink" class="main20">
+        <div class="main11">
+            <span class="badge-year">Added: Netscape | Removed: HTML5</span>
+            <h2>&lt;blink&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> The most hated tag, accessibility nightmare.
+        </div><br>
+        <div class="main11">
+            <h4>Old way:</h4> &lt;blink&gt;Flashing text&lt;/blink&gt;
+        </div>
+    </div>
+
+    <div id="frame" class="main21">
+        <div class="main12">
+            <span class="badge-year">Added: HTML4 | Removed: HTML5</span>
+            <h2>&lt;frame&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> Broke bookmarks and SEO. Use CSS Grid/Flexbox.
+        </div><br>
+        <div class="main12">
+            <h4>Old way:</h4> &lt;frameset cols="25%,75%"&gt;&lt;frame src="menu.html"&gt;&lt;/frameset&gt;
+        </div>
+    </div>
+
+    <div id="frameset" class="main22">
+        <div class="main13">
+            <span class="badge-year">Added: HTML4 | Removed: HTML5</span>
+            <h2>&lt;frameset&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> Replaced &lt;body&gt;, same issues as frames.
+        </div><br>
+        <div class="main13">
+            <h4>Old way:</h4> &lt;frameset rows="50%,50%"&gt;...&lt;/frameset&gt;
+        </div>
+    </div>
+
+    <div id="noframes" class="main20">
+        <div class="main11">
+            <span class="badge-year">Added: HTML4 | Removed: HTML5</span>
+            <h2>&lt;noframes&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> Fallback for frames – frames are gone.
+        </div><br>
+        <div class="main11">
+            <h4>Old way:</h4> &lt;noframes&gt;Your browser does not support frames.&lt;/noframes&gt;
+        </div>
+    </div>
+
+    <div id="applet" class="main21">
+        <div class="main12">
+            <span class="badge-year">Added: HTML3.2 | Removed: HTML5</span>
+            <h2>&lt;applet&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> Java plugin security risks. Use JavaScript/WebAssembly.
+        </div><br>
+        <div class="main12">
+            <h4>Old way:</h4> &lt;applet code="MyApplet.class" width="200" height="200"&gt;&lt;/applet&gt;
+        </div>
+    </div>
+
+    <div id="embed-old" class="main22">
+        <div class="main13">
+            <span class="badge-year">Added: Netscape/IE | Removed: HTML5 (redefined)</span>
+            <h2>&lt;embed&gt; (old version)</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> Plugin-specific, replaced by modern &lt;embed&gt;, &lt;video&gt;, &lt;audio&gt;.
+        </div><br>
+        <div class="main13">
+            <h4>Old way:</h4> &lt;embed src="movie.swf"&gt;
+        </div>
+    </div>
+
+    <div id="noembed" class="main20">
+        <div class="main11">
+            <span class="badge-year">Added: Netscape/IE | Removed: HTML5</span>
+            <h2>&lt;noembed&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> Fallback for obsolete plugins.
+        </div><br>
+        <div class="main11">
+            <h4>Old way:</h4> &lt;noembed&gt;Need Flash&lt;/noembed&gt;
+        </div>
+    </div>
+
+    <div id="acronym" class="main21">
+        <div class="main12">
+            <span class="badge-year">Added: HTML4 | Removed: HTML5</span>
+            <h2>&lt;acronym&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> Replaced by &lt;abbr&gt; (covers both acronyms and abbreviations).
+        </div><br>
+        <div class="main12">
+            <h4>Old way:</h4> &lt;acronym title="World Wide Web"&gt;WWW&lt;/acronym&gt;
+        </div>
+    </div>
+
+    <div id="basefont" class="main22">
+        <div class="main13">
+            <span class="badge-year">Added: IE/early | Removed: HTML5</span>
+            <h2>&lt;basefont&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> Presentational, use CSS on &lt;body&gt;.
+        </div><br>
+        <div class="main13">
+            <h4>Old way:</h4> &lt;basefont face="Arial" size="3"&gt;
+        </div>
+    </div>
+
+    <div id="big" class="main20">
+        <div class="main11">
+            <span class="badge-year">Added: HTML3.2 | Removed: HTML5</span>
+            <h2>&lt;big&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> Presentational, use CSS font-size.
+        </div><br>
+        <div class="main11">
+            <h4>Old way:</h4> This is &lt;big&gt;bigger text&lt;/big&gt;.
+        </div>
+    </div>
+
+    <div id="center" class="main21">
+        <div class="main12">
+            <span class="badge-year">Added: HTML3.2 | Removed: HTML5</span>
+            <h2>&lt;center&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> CSS text-align: center or margin: auto.
+        </div><br>
+        <div class="main12">
+            <h4>Old way:</h4> &lt;center&gt;Centered text&lt;/center&gt;
+        </div>
+    </div>
+
+    <div id="font" class="main22">
+        <div class="main13">
+            <span class="badge-year">Added: HTML3.2 | Removed: HTML5</span>
+            <h2>&lt;font&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> Entirely presentational, CSS is the standard.
+        </div><br>
+        <div class="main13">
+            <h4>Old way:</h4> &lt;font color="red" face="Verdana"&gt;Old style&lt;/font&gt;
+        </div>
+    </div>
+
+    <div id="strike" class="main20">
+        <div class="main11">
+            <span class="badge-year">Added: HTML3.2 | Removed: HTML5</span>
+            <h2>&lt;strike&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> Use &lt;del&gt; for deleted text or CSS text-decoration.
+        </div><br>
+        <div class="main11">
+            <h4>Old way:</h4> &lt;strike&gt;Strikethrough&lt;/strike&gt;
+        </div>
+    </div>
+
+    <div id="tt" class="main21">
+        <div class="main12">
+            <span class="badge-year">Added: HTML2 | Removed: HTML5</span>
+            <h2>&lt;tt&gt;</h2>
+        </div><br>
+        <div class="danger">
+            <strong>Why removed:</strong> Presentational monospace. Use &lt;code&gt; or CSS.
+        </div><br>
+        <div class="main12">
+            <h4>Old way:</h4> &lt;tt&gt;Monospaced text&lt;/tt&gt;
+        </div>
+    </div>
+
+    <!-- EVOLVED / DEPRECATED SECTION ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <h2 style="color: #34d399; margin-block-start: 50px; text-align: center; background-color: #d60101; padding: 10px;">MODERN REPLACEMENTS (OLD → NEW)</h2>
+    <p style="margin-block-end: 20px; text-align: center;">These tags still work but are deprecated. Use modern alternatives.</p>
+
+    <div id="b" class="main20">
+        <div class="main11"> <h2>&lt;b&gt; (Bold)</h2>
+        <p>Makes text bold (presentational only).</p></div><br>
+        <div class="main11">
+            <span>Modern replacement:</span> &lt;b&gt; → &lt;strong&gt;
+        </div><br>
+        <div class="main11">
+                <p>OUT PUT:</p>
+            <div class="old-code">&lt;b&gt;Bold text&lt;/b&gt; (visual only)</div>
+            <div class="new-code">&lt;strong&gt;Important text&lt;/strong&gt; (semantic)</div>
+        </div>
+    </div>
+
+    <div id="i" class="main21">
+        <div class="main12"><h2>&lt;i&gt; (Italic)</h2>
+        <p>Makes text italic (presentational).</p></div><br>
+        <div class="main12">
+            <span> Modern replacement:</span> &lt;i&gt; → &lt;em&gt;
+        </div><br>
+        <div class="main12">
+            <div class="old-code">&lt;i&gt;Italic text&lt;/i&gt;</div>
+            <div class="new-code">&lt;em&gt;Emphasized text&lt;/em&gt;</div>
+        </div>
+    </div>
+
+    <div id="u" class="main22">
+        <div class="main13"><h2>&lt;u&gt; (Underline)</h2>
+        <p>Underlines text – causes confusion with links.</p></div><br>
+        <div class="main13">
+           <span>Modern replacement:</span> CSS &lt;u&gt; → CSS
+        </div>
+    </div>
+
+    <div id="menu-old" class="main2">
+        <div class="tag-name">&lt;menu&gt; (old version)</div>
+        <p>List of menu items, identical to &lt;ul&gt;.</p>
+        <div class="replacement-box">
+            ✅ Modern replacement: &lt;ul&gt; or &lt;nav&gt; with list items.
+        </div>
+    </div>
+
+    <div id="dir" class="main2">
+        <div class="tag-name">&lt;dir&gt; (Directory list)</div>
+        <p>Created directory listing, same as &lt;ul&gt;.</p>
+        <div class="replacement-box">
+            ✅ Modern replacement: &lt;ul&gt;
+        </div>
+    </div>
+
+    <div id="pre" class="main2">
+        <div class="tag-name">&lt;pre&gt; (Preformatted)</div>
+        <p>Still used but the 'width' attribute is obsolete.</p>
+        <div class="replacement-box">
+            ✅ Modern replacement: &lt;pre&gt; with CSS styling.
+        </div>
+    </div>
+
+    <div class="main2">
+        <div class="tag-name">Various Table Attributes</div>
+        <p>align, bgcolor, border, cellpadding, cellspacing, valign, width.</p>
+        <div class="replacement-box">
+            ✅ Modern replacement: CSS (text-align, background-color, border, padding, etc.)
+        </div>
+    </div>
+
+    <div class="main2">
+        <div class="tag-name">Image Attributes (align, border, hspace, vspace)</div>
+        <div class="replacement-box">
+            ✅ Modern replacement: CSS (float, border, margin)
+        </div>
+    </div>
+
+    <div class="main2">
+        <div class="tag-name">Body Attributes (bgcolor, text, link, vlink, alink)</div>
+        <div class="replacement-box">
+            ✅ Modern replacement: CSS on &lt;body&gt; element.
+        </div>
+    </div>
+
+    <!-- Fun facts -->
+    <div style="background: linear-gradient(135deg, #fef3c7, #fde68a); border-radius: 20px; padding: 30px; margin-block-start: 40px;">
+        <h3 style="color: #92400e;">📜 Fun Facts About Old HTML Tags</h3>
+        <ul style="color: #78350f; line-height: 1.8;">
+            <li>🔴 The &lt;blink&gt; tag was created by Netscape and called "the most annoying tag ever"</li>
+            <li>🔴 &lt;marquee&gt; was never an official HTML standard - only Internet Explorer!</li>
+            <li>🔴 &lt;plaintext&gt; was dangerous because everything after it became unrenderable text</li>
+            <li>🔴 &lt;xmp&gt; and &lt;listing&gt; were the original code display tags before &lt;pre&gt;</li>
+            <li>🔴 Framesets were hated because they broke bookmarks and SEO</li>
+            <li>🔴 &lt;applet&gt; died because Java plugins became a security nightmare</li>
+            <li>🔴 The &lt;font&gt; tag was the #1 reason why CSS was invented!</li>
+        </ul>
+    </div>
+</main>
+
+<footer>
+    <p><strong>© 2026 Code in One. All rights reserved. | HTML Museum - Preserving Web History</strong></p>
+</footer>
+
+<script>
+    function scrollToSection(sectionId) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+            element.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+            });
+            element.style.transition = 'all 0.3s ease';
+            element.style.boxShadow = '0 0 0 3px rgba(248,113,113,0.5)';
+            setTimeout(() => {
+                element.style.boxShadow = '';
+            }, 1000);
+        }
+    }
+</script>
+</body>
+</html>

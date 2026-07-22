@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Code in One</title>
+    <link rel="stylesheet" href="css.css">
+    <style>
+        /* Custom styles for about page */
+        .about-container {
+            margin-inline-start: 320px;
+            padding: 30px;
+            max-inline-size: calc(100% - 350px);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #f87171, #34d399, #facc15);
+            border-radius: 24px;
+            padding: 50px;
+            text-align: center;
+            margin-block-end: 40px;
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            inset-block-start: -50%;
+            inset-inline-start: -50%;
+            inline-size: 200%;
+            block-size: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: shine 8s infinite;
+        }
+
+        @keyframes shine {
+
+            0%,
+            100% {
+                transform: translate(-30%, -30%);
+            }
+
+            50% {
+                transform: translate(30%, 30%);
+            }
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin-block-end: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            color: white;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Founder Section */
+        .founder-section {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            margin-block-end: 40px;
+            border: 2px solid #facc15;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .founder-section:hover {
+            transform: translateY(-5px);
+        }
+
+        .founder-card {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .founder-avatar {
+            inline-size: 200px;
+            block-size: 200px;
+            background: linear-gradient(135deg, #f87171, #34d399, #facc15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid #D4AF37;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+
+        .founder-avatar span {
+            font-size: 5rem;
+        }
+
+        .founder-info {
+            flex: 1;
+        }
+
+        .founder-info h2 {
+            color: #3B2E7E;
+            font-size: 2rem;
+            margin-block-end: 10px;
+        }
+
+        .founder-info .title {
+            color: #f87171;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-block-end: 15px;
+            display: inline-block;
+            padding: 5px 15px;
+            background: rgba(248, 113, 113, 0.1);
+            border-radius: 20px;
+        }
+
+        .founder-info p {
+            color: #4b5563;
+            line-height: 1.8;
+            margin-block-start: 15px;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-block-end: 40px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 20px;
+            border: 2px solid #34d399;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.15);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #f87171, #34d399);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .stat-label {
+            color: #3B2E7E;
+            font-weight: bold;
+            margin-block-start: 10px;
+        }
+
+        /* Mission & Vision */
+        .mission-vision {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-block-end: 40px;
+        }
+
+        .mv-card {
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .mv-card:nth-child(1) {
+            border: 2px solid #f87171;
+        }
+
+        .mv-card:nth-child(2) {
+            border: 2px solid #34d399;
+        }
+
+        .mv-card:nth-child(3) {
+            border: 2px solid #facc15;
+        }
+
+        .mv-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .mv-icon {
+            font-size: 3rem;
+            margin-block-end: 20px;
+        }
+
+        .mv-card h3 {
+            color: #3B2E7E;
+            margin-block-end: 15px;
+        }
+
+        .mv-card p {
+            color: #6b7280;
+            line-height: 1.7;
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            margin-block-end: 40px;
+            border: 2px solid #f87171;
+        }
+
+        .timeline-section h2 {
+            text-align: center;
+            color: #3B2E7E;
+            margin-block-end: 40px;
+            font-size: 2rem;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .timeline-item {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            background: #f9fafb;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-item:hover {
+            background: linear-gradient(135deg, rgba(248, 113, 113, 0.05), rgba(52, 211, 153, 0.05));
+            transform: translateX(10px);
+        }
+
+        .timeline-year {
+            min-inline-size: 100px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #f87171, #34d399);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .timeline-content h4 {
+            color: #3B2E7E;
+            margin-block-end: 5px;
+        }
+
+        .timeline-content p {
+            color: #6b7280;
+        }
+
+        /* Team Section */
+        .team-section {
+            background: white;
+            border-radius: 24px;
+            padding: 40px;
+            margin-block-end: 40px;
+            border: 2px solid #34d399;
+        }
+
+        .team-section h2 {
+            text-align: center;
+            color: #3B2E7E;
+            margin-block-end: 40px;
+            font-size: 2rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .team-card {
+            text-align: center;
+            padding: 25px;
+            background: #f9fafb;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-avatar {
+            inline-size: 100px;
+            block-size: 100px;
+            background: linear-gradient(135deg, #f87171, #34d399, #facc15);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 2.5rem;
+            border: 3px solid #D4AF37;
+        }
+
+        .team-card h4 {
+            color: #3B2E7E;
+            margin-block-end: 5px;
+        }
+
+        .team-role {
+            color: #f87171;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-block-end: 10px;
+        }
+
+        /* Contact CTA */
+        .contact-cta {
+            background: linear-gradient(135deg, #3B2E7E, #2a1f5c);
+            border-radius: 24px;
+            padding: 50px;
+            text-align: center;
+            border: 2px solid #D4AF37;
+        }
+
+        .contact-cta h2 {
+            color: white;
+            margin-block-end: 15px;
+        }
+
+        .contact-cta p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-block-end: 25px;
+        }
+
+        .contact-btn {
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #f87171, #34d399, #facc15);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive */
+        @media (max-inline-size: 768px) {
+            .about-container {
+                margin-inline-start: 20px;
+                padding: 20px;
+                max-inline-size: calc(100% - 40px);
+            }
+
+            .founder-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .timeline-item {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.png" alt="Logo" class="logo" onerror="this.src='logo.png'; this.onerror=null;">
+        <div class="nav-right">
+            <button class="home-btn" onclick="window.location.href='main.html'">🏠 Home</button>
+            <button class="home-btn" onclick="window.location.href='index.html'">🚪 Exit</button>
+        </div>
+    </header>
+
+    <div class="nav">
+        <h2> ABOUT US</h2>
+    </div>
+
+    <div class="sidebar">
+        <div class="he he-title">📌 QUICK LINKS</div>
+        <div class="he1" onclick="scrollToSection('founder')"><i></i> Founder</div>
+        <div class="he1" onclick="scrollToSection('mission')"> Mission & Vision</div>
+        <div class="he1" onclick="scrollToSection('timeline')"> Our Journey</div>
+        <div class="he1" onclick="scrollToSection('team')"> Our Team</div>
+        <div class="he1" onclick="scrollToSection('contact')"> Contact</div>
+
+
+    </div>
+
+    <div class="about-container">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <h1> Welcome to Code in One </h1>
+            <p>Empowering developers worldwide with quality coding education</p>
+        </div>
+
+        <!-- Founder Section -->
+        <div id="founder" class="founder-section">
+            <div class="founder-card">
+                <div class="founder-avatar">
+                    <span>👨‍💻</span>
+                </div>
+                <div class="founder-info">
+                    <h2>SK IA</h2>
+                    <span class="title"> Founder & CEO </span>
+                    <p>"I started Code in One with a simple mission - to make coding education accessible, practical,
+                        and enjoyable for everyone. After years of experience in software development and teaching, I
+                        realized that most tutorials either lack depth or are too complicated for beginners. That's why
+                        I created this platform - to bridge the gap between theoretical knowledge and real-world
+                        application."</p>
+                    <p style="margin-block-start: 15px;">🎓 <strong>Education:</strong> Computer Science Engineering<br>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Support</div>
+            </div>
+        </div>
+
+        <!-- Mission & Vision -->
+        <div id="mission" class="mission-vision">
+            <div class="mv-card">
+                <div class="mv-icon">🎯</div>
+                <h3>Our Mission</h3>
+                <p>To provide high-quality, accessible coding education that empowers individuals to transform their
+                    ideas into reality through technology.</p>
+            </div>
+            <div class="mv-card">
+                <div class="mv-icon">👁️</div>
+                <h3>Our Vision</h3>
+                <p>To make quality coding education accessible to everyone, creating a global community of skilled
+                    developers.</p>
+            </div>
+            <div class="mv-card">
+                <div class="mv-icon">💎</div>
+                <h3>Our Values</h3>
+                <p>Quality, Accessibility, Innovation, Community, and Continuous Learning are at the heart of everything
+                    we do.</p>
+            </div>
+        </div>
+
+        <!-- Timeline -->
+        <div id="timeline" class="timeline-section">
+            <h2> Our Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2026</div>
+                    <div class="timeline-content">
+                        <h4>The Beginning</h4>
+                        <p>Code in One was founded by SK IA with a dream to help others learn coding.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-year">2027</div>
+                    <div class="timeline-content">
+                        <h4> The Future</h4>
+                        <p>Planning to add React, Node.js, and AI-powered coding assistance to the platform.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Section -->
+        <div id="team" class="team-section">
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">👨</div>
+                    <h4>SK IA</h4>
+                    <div class="team-role">Founder & CEO</div>
+                    <p>Full Stack Developer & Educator</p>
+                </div>
+
+            </div>
+
+            <!-- Contact CTA -->
+            <div id="contact" class="contact-cta">
+                <h2>📧 Get in Touch</h2>
+                <p>Have questions? Want to collaborate? We'd love to hear from you!</p>
+                <button class="contact-btn" onclick="window.location.href='mailto:skia@codeinone.com'">📩 Contact SK
+                    IA</button>
+                <p style="margin-block-start: 20px; font-size: 0.9rem;">📞 +91 98765 43210 | ✉️ skia@codeinone.com</p>
+            </div>
+        </div>
+
+        <footer>
+            <p><strong>© 2026 Code in One. All rights reserved.</strong></p>
+        </footer>
+
+        <script>
+            function scrollToSection(sectionId) {
+                const element = document.getElementById(sectionId);
+                if (element) {
+                    element.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    element.style.transition = 'all 0.3s ease';
+                    element.style.boxShadow = '0 0 0 3px rgba(248,113,113,0.5)';
+                    setTimeout(() => {
+                        element.style.boxShadow = '';
+                    }, 1000);
+                }
+            }
+        </script>
+
+</body>
+
+</html>

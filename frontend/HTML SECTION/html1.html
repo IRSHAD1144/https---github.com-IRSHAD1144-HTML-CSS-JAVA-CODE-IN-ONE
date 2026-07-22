@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML PAGE</title>
+    <link rel="stylesheet" href="html.css">
+   
+</head>
+
+<body>
+
+<header>
+    <img src="/images/logo.png" alt="Logo" class="logo" onerror="this.src='logo.png'; this.onerror=null;">
+    <div class="nav-right">
+        <button class="home-btn" onclick="window.location.href='Html.html'">BACK 1</button>
+        <button class="home-btn" onclick="window.location.href='html2.html'">NEXT 3</button>
+        <button class="home-btn" onclick="window.location.href='oldhtml.html'">old tags</button>
+    </div>
+</header>
+
+<div class="nav">
+    <h2>HTML ELEMENTS 2</h2>
+</div>
+
+<div class="sidebar">
+    <!-- TABLES SECTION ////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <div class="he he-title">TABLES (10)</div>
+    <div class="he1" onclick="scrollToSection('table-basic')">&lt;table&gt;</div>
+    <div class="he1" onclick="scrollToSection('tr')">&lt;tr&gt;</div>
+    <div class="he1" onclick="scrollToSection('td')">&lt;td&gt;</div>
+    <div class="he1" onclick="scrollToSection('th')">&lt;th&gt;</div>
+    <div class="he1" onclick="scrollToSection('thead')">&lt;thead&gt;</div>
+    <div class="he1" onclick="scrollToSection('tbody')">&lt;tbody&gt;</div>
+    <div class="he1" onclick="scrollToSection('tfoot')">&lt;tfoot&gt;</div>
+    <div class="he1" onclick="scrollToSection('caption')">&lt;caption&gt;</div>
+    <div class="he1" onclick="scrollToSection('colgroup')">&lt;colgroup&gt;</div>
+    <div class="he1" onclick="scrollToSection('col')">&lt;col&gt;</div>
+
+    <!-- LINKS SECTION ////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <div class="he he-title">LINKS (4)</div>
+    <div class="he1" onclick="scrollToSection('anchor')">&lt;a&gt;</div>
+    <div class="he1" onclick="scrollToSection('area')">&lt;area&gt;</div>
+    <div class="he1" onclick="scrollToSection('link-tag')">&lt;link&gt;</div>
+    <div class="he1" onclick="scrollToSection('form-link')">&lt;form&gt;</div>
+    <!--/////////////////////////////////////////////// FORMS SECTION////////////////////////////////////////////////////////////// -->
+    <div class="he he-title"> FORMS (14)</div>
+    <div class="he1" onclick="scrollToSection('form')">&lt;form&gt;</div>
+    <div class="he1" onclick="scrollToSection('input')">&lt;input&gt;</div>
+    <div class="he1" onclick="scrollToSection('button')">&lt;button&gt;</div>
+    <div class="he1" onclick="scrollToSection('label')">&lt;label&gt;</div>
+    <div class="he1" onclick="scrollToSection('textarea')">&lt;textarea&gt;</div>
+    <div class="he1" onclick="scrollToSection('select')">&lt;select&gt;</div>
+    <div class="he1" onclick="scrollToSection('option')">&lt;option&gt;</div>
+    <div class="he1" onclick="scrollToSection('optgroup')">&lt;optgroup&gt;</div>
+    <div class="he1" onclick="scrollToSection('fieldset')">&lt;fieldset&gt;</div>
+    <div class="he1" onclick="scrollToSection('legend')">&lt;legend&gt;</div>
+    <div class="he1" onclick="scrollToSection('datalist')">&lt;datalist&gt;</div>
+    <div class="he1" onclick="scrollToSection('output')">&lt;output&gt;</div>
+    <div class="he1" onclick="scrollToSection('progress')">&lt;progress&gt;</div>
+    <div class="he1" onclick="scrollToSection('meter')">&lt;meter&gt;</div>
+</div> 
+
+    <h2 style="align-items: center; justify-content: center;">TABLE ELEMENTS (10)</h2>
+    
+    <div id="table" class="main20">
+        <div class="main11"><h2>&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</h2>
+        <h3>Basic Table</h3>
+        <pre>&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Jane&lt;/td&gt;
+        &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+         &lt;/table&gt;</pre></div><br>
+        <div class="main11">
+              <h3>OUTPUT:</h3>
+            <table border="1" style="border-collapse: collapse;">
+                <tr><th>Name</th><th>Age</th></tr>
+                <tr><td>John</td><td>25</td></tr>
+                <tr><td>Jane</td><td>30</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="thead" class="main21">
+        <div class=" main12 "><h2>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</h2>
+        <h3>Table Sections</h3>
+        <pre>&lt;table border="1"&gt;
+    &lt;thead&gt;
+        <tr><th>Month</th><th>Sales</th></tr>
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        <tr><td>Jan</td><td>$1000</td></tr>
+        <tr><td>Feb</td><td>$1500</td></tr>
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        <tr><td>Total</td><td>$2500</td></tr>
+    &lt;/tfoot&gt;
+&lt;/table&gt;</pre></div><br>
+        <div class="main12">
+              <h3>OUTPUT:</h3>
+            <table border="1" style="border-collapse: collapse;">
+                <thead><tr><th>Month</th><th>Sales</th></tr></thead>
+                <tbody><tr><td>Jan</td><td>$1000</td></tr><tr><td>Feb</td><td>$1500</td></tr></tbody>
+                <tfoot><tr><td>Total</td><td>$2500</td></tr></tfoot>
+            </table>
+        </div>
+    </div>
+
+    <div id="caption" class="main22">
+        <div class="main13"><h2>&lt;caption&gt;</h2>
+        <h3>Table Caption</h3>
+        <pre>&lt;table border="1"&gt;
+    &lt;caption&gt;Monthly Savings&lt;/caption&gt;
+    <tr><th>Month</th><th>Savings</th></tr>
+    <tr><td>Jan</td><td>$100</td></tr>
+&lt;/table&gt;</pre></div><br>
+        <div class="main13">
+            <h3>OUTPUT:</h3>
+            <table border="1" style="border-collapse: collapse;">
+                <caption>Monthly Savings</caption>
+                <tr><th>Month</th><th>Savings</th></tr>
+                <tr><td>Jan</td><td>$100</td></tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="colgroup" class="main20">
+        <div class="main11"><h2>&lt;colgroup&gt; &amp; &lt;col&gt;</h2>
+        <h3>Column Groups</h3>
+        <pre>&lt;table border="1"&gt;
+    &lt;colgroup&gt;
+        &lt;col style="background: lightblue"&gt;
+        &lt;col style="background: lightgreen"&gt;
+    &lt;/colgroup&gt;
+    <tr><th>Name</th><th>Score</th></tr>
+    <tr><td>John</td><td>85</td></tr>
+    <tr><td>Jane</td><td>92</td></tr>
+&lt;/table&gt;</pre></div><br>
+        <div class="main11">
+            <h3>OUTPUT:</h3>
+            <table border="1" style="border-collapse: collapse; ">
+                <colgroup>
+                    <col style="background: lightblue">
+                    <col style="background: lightgreen">
+                </colgroup>
+                <tr><th>Name</th><th>Score</th></tr>
+                <tr><td>John</td><td>85</td></tr>
+                <tr><td>Jane</td><td>92</td></tr>
+            </table>
+        </div>
+    </div>
+</div>
+<!--======================================================================================================================================-->
+<h2 style="background-color: aqua;">🔗 LINK & NAVIGATION ELEMENTS (4)</h2>
+
+
+    <div class="main21">
+        <div class="main12"><h2>&lt;a&gt;</h2>
+        <h3>Anchor / Hyperlink</h3>
+        <pre>&lt;a href="https://www.google.com" target="_blank"&gt;Visit Google&lt;/a&gt;
+         &lt;a href="#top"&gt;Go to Top&lt;/a&gt;</pre></div><br>
+        <div class="main12">
+            <h3>OUTPUT:</h3>
+            <a href="#">Visit Google</a><br>
+            <a href="#">Go to Top</a>
+        </div>
+</div>
+ 
+    <div id="nav-links" class="main22">
+        <div class="main13"><h2>&lt;nav&gt;</h2>
+        <h3>Navigation (grouping container)</h3>
+        <pre>&lt;nav&gt;
+    &lt;a href="#home"&gt;Home&lt;/a&gt; |
+    &lt;a href="#about"&gt;About&lt;/a&gt; |
+    &lt;a href="#contact"&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;</pre></div><br>
+        <div class="main13">
+            <h3>OUTPUT:</h3>
+            <nav>
+                <a href="#">Home</a> |
+                <a href="#">About</a> |
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="main20">
+        <div class="main11"><h2>&lt;link&gt;</h2>
+        <h3>External Resource Link</h3>
+        <pre>&lt;!-- Used inside &lt;head&gt; --&gt;
+&lt;link rel="stylesheet" href="style.css"&gt;
+&lt;link rel="icon" href="favicon.ico"&gt;
+&lt;link rel="preconnect" href="https://fonts.com"&gt;</pre></div><br>
+        <div class="main11">
+            <h3>OUTPUT:</h3>
+            ⚡ <strong>Note:</strong> &lt;link&gt; elements go in the &lt;head&gt; and don’t display visible content.
+            <br>They link to stylesheets, icons, fonts, etc.
+        </div>
+    </div>
+
+    <div class="main21">
+        <div class="main12"><h2>&lt;area&gt;</h2>
+        <h3>Image Map Area</h3>
+        <pre>&lt;img src="https://via.placeholder.com/300x150?text=Click+Regions" usemap="#workmap"&gt;
+&lt;map name="workmap"&gt;
+  &lt;area shape="rect" coords="0,0,150,75" href="#" alt="Left top"&gt;
+  &lt;area shape="rect" coords="150,75,300,150" href="#" alt="Right bottom"&gt;
+&lt;/map&gt;</pre></div><br>
+        <div class="main12">
+            <h3>OUTPUT:</h3>
+<img src="/images/India.png" alt="Logo" class="logo" width="300" height="100">
+            <map name="demoWorkMap">
+                <area shape="rect" coords="0,0,150,75" href="#" alt="Left top" title="Left top area">
+                <area shape="rect" coords="150,75,300,150" href="#" alt="Right bottom" title="Right bottom area">
+            </map>
+            <p style="font-size:0.8rem;">✅ Try hovering over the image – two clickable rectangles.</p>
+        </div>
+    </div>
+
+
+<!-- ========== FORM ELEMENTS SECTION ========== -->
+<h2 style="text-align: center;background-color: aquamarine;"> FORM ELEMENTS (14)</h2>
+
+<div id="form" class="main22">
+    <div class="main13"><h2>&lt;form&gt;</h2>
+    <h3>Form Container</h3>
+    <pre>&lt;form action="/submit" method="post"&gt;
+    &lt;!-- form elements --&gt;
+&lt;/form&gt;</pre></div><br>
+  <div class="main22">
+    <p><strong>Output:</strong> Container for user input elements.</p>
+  </div>
+</div>
+
+<div id="input" class="main20">
+    <div class="main11"><h2>&lt;input&gt;</h2>
+    <h3>Input Field (All Types)</h3>
+    <pre>&lt;input type="text" placeholder="Text"&gt;
+&lt;input type="password" placeholder="Password"&gt;
+&lt;input type="email" placeholder="Email"&gt;
+&lt;input type="number" placeholder="Number"&gt;
+&lt;input type="date"&gt;
+&lt;input type="checkbox"&gt; Checkbox
+&lt;input type="radio"&gt; Radio
+&lt;input type="color"&gt;
+&lt;input type="range"&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;input type="reset" value="Reset"&gt;</pre></div><br>
+    <div class="main11">
+        <h3>OUTPUT:</h3>
+        <input type="text" placeholder="Text"><br><br>
+        <input type="password" placeholder="Password"><br><br>
+        <input type="email" placeholder="Email"><br><br>
+        <input type="number" placeholder="Number"><br><br>
+        <input type="date"><br><br>
+        <input type="checkbox"> Checkbox<br><br>
+        <input type="radio"> Radio<br><br>
+        <input type="color"><br><br>
+        <input type="range"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </div>
+</div>
+
+<div id="button" class="main21">
+    <div class="main12"><h2>&lt;button&gt;</h2>
+    <h3>Button</h3>
+    <pre>&lt;button type="button"&gt;Click Me!&lt;/button&gt;
+&lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;button disabled&gt;Disabled&lt;/button&gt;</pre></div><br>
+    <div class="main12">
+        <h3>OUTPUT:</h3>
+        <button type="button">Click Me!</button>
+        <button type="submit">Submit</button>
+        <button disabled>Disabled</button>
+    </div>
+</div>
+
+<div class="main22">
+    <div class="main13">
+        <h2>&lt;label&gt;</h2>
+        <h3>Label</h3>
+        <pre>&lt;label for="name"&gt;Name:&lt;/label&gt;
+&lt;input type="text" id="name"&gt;</pre>
+    </div><br>
+    <div class="main13">
+        <h3>OUTPUT:</h3>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+    </div>
+</div>
+
+<div id="textarea" class="main20">
+    <div class="main11"><h2>&lt;textarea&gt;</h2>
+    <h3>Text Area</h3>
+    <pre>&lt;textarea rows="4" cols="50" placeholder="Message..."&gt;&lt;/textarea&gt;</pre></div><br>
+    <div class="main11">
+        <h3>OUTPUT:</h3>
+        <textarea rows="4" cols="50" placeholder="Message..."></textarea>
+    </div>
+</div>
+
+<div id="select" class="main21">
+    <div class="main13"><h2>&lt;select&gt; &amp; &lt;option&gt;</h2>
+    <h3>Dropdown List</h3>
+    <pre>&lt;select&gt;
+    &lt;option&gt;Apple&lt;/option&gt;
+    &lt;option selected&gt;Banana&lt;/option&gt;
+    &lt;option&gt;Orange&lt;/option&gt;
+&lt;/select&gt;</pre></div><br>
+    <div class="main12">
+        <h3>OUTPUT:</h3>
+        <select>
+            <option>Apple</option>
+            <option selected>Banana</option>
+            <option>Orange</option>
+        </select>
+    </div>
+</div>
+
+<div id="optgroup" class="main22">
+    <div class="main13"><h2>&lt;optgroup&gt;</h2>
+    <h3>Option Group</h3>
+    <pre>&lt;select&gt;
+    &lt;optgroup label="Fruits"&gt;
+        &lt;option&gt;Apple&lt;/option&gt;
+        &lt;option&gt;Banana&lt;/option&gt;
+    &lt;/optgroup&gt;
+    &lt;optgroup label="Vegetables"&gt;
+        &lt;option&gt;Carrot&lt;/option&gt;
+        &lt;option&gt;Broccoli&lt;/option&gt;
+    &lt;/optgroup&gt;
+&lt;/select&gt;</pre></div><br>
+    <div class="main13">
+        <h3>OUTPUT:</h3>
+        <select>
+            <optgroup label="Fruits">
+                <option>Apple</option>
+                <option>Banana</option>
+            </optgroup>
+            <optgroup label="Vegetables">
+                <option>Carrot</option>
+                <option>Broccoli</option>
+            </optgroup>
+        </select>
+    </div>
+</div>
+
+<div id="fieldset" class="main20">
+    <div class="main11"><h2>&lt;fieldset&gt; &amp; &lt;legend&gt;</h2>
+    <h3>Fieldset and Legend</h3>
+    <pre>&lt;fieldset&gt;
+    &lt;legend&gt;Personal Info&lt;/legend&gt;
+    Name: &lt;input type="text"&gt;&lt;br&gt;
+    Email: &lt;input type="email"&gt;
+&lt;/fieldset&gt;</pre></div><br>
+    <div class="main11">
+        <h3>OUTPUT:</h3>
+        <fieldset>
+            <legend>Personal Info</legend>
+            Name: <input type="text"><br>
+            Email: <input type="email">
+        </fieldset>
+    </div>
+</div>
+
+<div id="datalist" class="main21">
+    <div class="main12"><h2>&lt;datalist&gt;</h2>
+    <h3>Datalist (Autocomplete)</h3>
+    <pre>&lt;input list="browsers"&gt;
+&lt;datalist id="browsers"&gt;
+    &lt;option&gt;Chrome&lt;/option&gt;
+    &lt;option&gt;Firefox&lt;/option&gt;
+    &lt;option&gt;Safari&lt;/option&gt;
+&lt;/datalist&gt;</pre></div><br>
+    <div class="main12">
+        <h3>OUTPUT:</h3>
+        <input list="demo-browsers">
+        <datalist id="demo-browsers">
+            <option>Chrome</option>
+            <option>Firefox</option>
+            <option>Safari</option>
+        </datalist>
+    </div>
+</div>
+
+<div id="output" class="main22">
+    <div class="main13"><h2>&lt;output&gt;</h2>
+    <h3>Output</h3>
+    <pre>&lt;form oninput="result.value=parseInt(a.value)+parseInt(b.value)"&gt;
+    &lt;input type="range" name="a" value="50"&gt; +
+    &lt;input type="number" name="b" value="25"&gt; =
+    &lt;output name="result"&gt;75&lt;/output&gt;
+&lt;/form&gt;</pre></div><br>
+    <div class="main13">
+        <h3>OUTPUT:</h3>
+        <form oninput="demoResult.value=parseInt(demoA.value)+parseInt(demoB.value)">
+            <input type="range" name="demoA" value="50"> +
+            <input type="number" name="demoB" value="25"> =
+            <output name="demoResult">75</output>
+        </form>
+    </div>
+</div>
+
+<div id="progress" class="main20">
+    <div class="main11"><h2>&lt;progress&gt;</h2>
+    <h3>Progress Bar</h3>
+    <pre>&lt;progress value="70" max="100"&gt;70%&lt;/progress&gt;</pre></div><br>
+    <div class="main11">
+        <h3>OUTPUT:</h3>
+        <progress value="70" max="100">70%</progress>
+    </div>
+</div>
+
+<div id="meter" class="main21">
+    <div class="main12"><h2>&lt;meter&gt;</h2>
+    <h3>Meter/Gauge</h3>
+    <pre>&lt;meter value="0.8"&gt;80%&lt;/meter&gt;
+&lt;meter value="30" min="0" max="100" low="40" high="80"&gt;30%&lt;/meter&gt;</pre></div><br>
+    <div class="main12">
+        <h3>OUTPUT:</h3>
+        <meter value="0.8">80%</meter><br>
+        <meter value="30" min="0" max="100" low="40" high="80">30%</meter>
+    </div>
+</div>
+   
+
+
+<script>
+function scrollToSection(sectionId) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+        element.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+        });
+        element.style.transition = 'all 0.3s ease';
+        element.style.boxShadow = '0 0 0 3px rgba(248,113,113,0.5)';
+        setTimeout(() => {
+            element.style.boxShadow = '';
+        }, 1000);
+    } else {
+        console.log("Section not found: " + sectionId);
+    }
+}
+</script>
+
+</body>
+</html>

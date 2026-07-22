@@ -60,7 +60,7 @@
 
         .nav {
             block-size: 60px;
-            background: linear-gradient(135deg, #f87171, #34d399, #facc15);
+            background: linear-gradient(135deg, #E34F26, #34d399, #facc15);
             color: white;
             display: flex;
             align-items: center;
@@ -92,7 +92,7 @@
 .card {
     inline-size: 200px;
     block-size: 150px;
-  background: linear-gradient(135deg, #f87171, #34d399, #facc15);
+  background: linear-gradient(135deg, #E34F26, #34d399, #facc15);
    color:  white;
     text-shadow: 0 0 2px rgb(0, 0,0,0.5);
     display: flex;
@@ -104,15 +104,38 @@
     transition: 0.3s;
 }
 
-/* Hover effect */
+
 .card:hover {
-   background: linear-gradient(135deg, #f87171, #34d399, #facc15);
+   background: linear-gradient(135deg, #E34F26, #34d399, #facc15);
     color: black;
 }
  .button1{
             padding: 8px 15px;
-           background: linear-gradient(135deg, #f87171, #34d399, #facc15);
+           background: #E34F26;
             color: white;
+            text-shadow: 0 0 2px rgb(0, 0,0,0.5);
+            border-color: #d4af37;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .button2{
+            padding: 8px 15px;
+           background: #1572B6;
+            color: white;
+            text-shadow: 0 0 2px rgb(0, 0,0,0.5);
+            border-color: #d4af37;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .button3{
+            padding: 8px 15px;
+           background: #F7DF1E;
+            color: black;
             text-shadow: 0 0 2px rgb(0, 0,0,0.5);
             border-color: #d4af37;
             border: none;
@@ -127,11 +150,11 @@
 
    
     <header>
-        <img src="logo.png" alt="Logo" class="logo">
+        <img src="/images/logo.png" alt="Logo" class="logo">
 
         <div class="nav-right">
             <label for="upload">
-                <img src="boy user.png" id="avatar" class="avatar">
+                <img src="/images/boy user.png " id="avatar" class="avatar">
             </label>
             <input type="file" id="upload" accept="image/*" hidden>
 
@@ -144,24 +167,27 @@
   
     <div class="nav">
         <span>Menu</span>
-        <a href="languages.html">
+        <a href="Select.html">
             <button class="button">Select Language</button>
+        </a>
+        <a href="about.html">
+            <button class="button">About Us</button>
         </a>
     </div>
 
 
 <div class="main">
     <div class="cards">
-        <div class="card html"><a href="HTML.html" ><button class="button1">HTML</button></a></div>
-        <div class="card css"><a href="CSS.html"><button class="button1">CSS</button></a></div>
-        <div class="card java"><a href="JAVA.html"><button class="button1">JSS</button></a></div><br>
+        <div class="card html"><a href="HTML.html" ><button class="button1">HTML5</button></a></div>
+        <div class="card css"><a href="CSS1.html"><button class="button2">CSS3</button></a></div>
+        <div class="card java"><a href="JAVA.html"><button class="button3">JavaScript</button></a></div><br>
      
-       
+      
     </div>
 </div>
 
     <footer>
-        &copy; 2026 C1 Codes. All rights reserved.
+        &copy; 2026 c1 Codes in one. All rights reserved.
     </footer>
 
     <script>

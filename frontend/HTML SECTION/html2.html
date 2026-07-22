@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements Documentation</title>
+    <link rel="stylesheet" href="html.css">
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="Logo" class="logo" onerror="this.src='logo.png'; this.onerror=null;">
+     <div class="nav-right">
+        <button class="home-btn" onclick="window.location.href='Html.html'"> BACK 1</button>
+        <button class="home-btn" onclick="window.location.href='html1.html'">BACK 2</button>
+        <button class="home-btn" onclick="window.location.href='oldhtml.html'">old tags</button>
+    </div>
+</header>
+
+<div class="nav">
+    <h2>HTML ELEMENTS 3</h2>
+</div>
+
+<div class="sidebar">
+    <!-- MULTIMEDIA SECTION -->
+    <div class="he he-title"> MULTIMEDIA (10)</div>
+    <div class="he1" onclick="scrollToSection('img')">&lt;img&gt;</div>
+    <div class="he1" onclick="scrollToSection('picture')">&lt;picture&gt;</div>
+    <div class="he1" onclick="scrollToSection('source')">&lt;source&gt;</div>
+    <div class="he1" onclick="scrollToSection('audio')">&lt;audio&gt;</div>
+    <div class="he1" onclick="scrollToSection('video')">&lt;video&gt;</div>
+    <div class="he1" onclick="scrollToSection('iframe')">&lt;iframe&gt;</div>
+    <div class="he1" onclick="scrollToSection('embed')">&lt;embed&gt;</div>
+    <div class="he1" onclick="scrollToSection('object')">&lt;object&gt;</div>
+    <div class="he1" onclick="scrollToSection('param')">&lt;param&gt;</div>
+    <div class="he1" onclick="scrollToSection('track')">&lt;track&gt;</div>
+
+    <!-- SEMANTIC SECTION -->
+    <div class="he he-title"> SEMANTIC (12)</div>
+    <div class="he1" onclick="scrollToSection('semantic-header')">&lt;header&gt;</div>
+    <div class="he1" onclick="scrollToSection('semantic-footer')">&lt;footer&gt;</div>
+    <div class="he1" onclick="scrollToSection('semantic-main')">&lt;main&gt;</div>
+    <div class="he1" onclick="scrollToSection('section')">&lt;section&gt;</div>
+    <div class="he1" onclick="scrollToSection('article')">&lt;article&gt;</div>
+    <div class="he1" onclick="scrollToSection('aside')">&lt;aside&gt;</div>
+    <div class="he1" onclick="scrollToSection('nav')">&lt;nav&gt;</div>
+    <div class="he1" onclick="scrollToSection('figure')">&lt;figure&gt;</div>
+    <div class="he1" onclick="scrollToSection('figcaption')">&lt;figcaption&gt;</div>
+    <div class="he1" onclick="scrollToSection('details')">&lt;details&gt;</div>
+    <div class="he1" onclick="scrollToSection('summary')">&lt;summary&gt;</div>
+    <div class="he1" onclick="scrollToSection('semantic-mark')">&lt;mark&gt;</div>
+
+    <!-- OTHER SECTION -->
+    <div class="he he-title"> OTHER (15)</div>
+    <div class="he1" onclick="scrollToSection('script')">&lt;script&gt;</div>
+    <div class="he1" onclick="scrollToSection('noscript')">&lt;noscript&gt;</div>
+    <div class="he1" onclick="scrollToSection('canvas')">&lt;canvas&gt;</div>
+    <div class="he1" onclick="scrollToSection('svg')">&lt;svg&gt;</div>
+    <div class="he1" onclick="scrollToSection('math')">&lt;math&gt;</div>
+    <div class="he1" onclick="scrollToSection('template')">&lt;template&gt;</div>
+    <div class="he1" onclick="scrollToSection('slot')">&lt;slot&gt;</div>
+    <div class="he1" onclick="scrollToSection('dialog')">&lt;dialog&gt;</div>
+    <div class="he1" onclick="scrollToSection('menu')">&lt;menu&gt;</div>
+    <div class="he1" onclick="scrollToSection('wbr')">&lt;wbr&gt;</div>
+    <div class="he1" onclick="scrollToSection('data')">&lt;data&gt;</div>
+    <div class="he1" onclick="scrollToSection('time')">&lt;time&gt;</div>
+    <div class="he1" onclick="scrollToSection('ruby')">&lt;ruby&gt;</div>
+    <div class="he1" onclick="scrollToSection('rt')">&lt;rt&gt;</div>
+    <div class="he1" onclick="scrollToSection('rp')">&lt;rp&gt;</div>
+</div> <!-- ✅ Closed sidebar -->
+
+<!-- MULTIMEDIA ELEMENTS -->
+<div class="main">
+    <h2>🎵 MULTIMEDIA ELEMENTS (10)</h2>
+    
+    <div id="img" class="main1">
+        <div class="tag-badge">&lt;img&gt;</div>
+        <h3>Image Tag</h3>
+        <pre>&lt;img src="image.jpg" alt="Description"&gt;</pre>
+        <p><strong>Output:</strong> Displays an image on the page.</p>
+    </div>
+
+    <div id="picture" class="main2">
+        <div class="tag-badge">&lt;picture&gt;</div>
+        <h3>Picture Tag</h3>
+        <pre>&lt;picture&gt;
+    &lt;source media="(min-inline-size:650px)" srcset="img_large.jpg"&gt;
+    &lt;source media="(min-inline-size:465px)" srcset="img_medium.jpg"&gt;
+    &lt;img src="img_small.jpg" alt="Responsive image"&gt;
+&lt;/picture&gt;</pre>
+        <p><strong>Output:</strong> Provides multiple image sources for responsive design.</p>
+    </div>
+
+    <div id="source" class="main">
+        <div class="tag-badge">&lt;source&gt;</div>
+        <h3>Source Tag</h3>
+        <pre>&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    &lt;source src="audio.ogg" type="audio/ogg"&gt;
+&lt;/audio&gt;</pre>
+        <p><strong>Output:</strong> Specifies multiple media resources for audio/video.</p>
+    </div>
+
+    <div id="audio" class="main1">
+        <div class="tag-badge">&lt;audio&gt;</div>
+        <h3>Audio Tag</h3>
+        <pre>&lt;audio controls&gt;
+    &lt;source src="song.mp3" type="audio/mpeg"&gt;
+    Your browser does not support audio.
+&lt;/audio&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <audio controls>
+                <source src="song.mp3" type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+        </div>
+    </div>
+
+    <div id="video" class="main2">
+        <div class="tag-badge">&lt;video&gt;</div>
+        <h3>Video Tag</h3>
+        <pre>&lt;video width="320" height="240" controls&gt;
+    &lt;source src="movie.mp4" type="video/mp4"&gt;
+    Your browser does not support video.
+&lt;/video&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <video width="320" height="240" controls>
+                <source src="movie.mp4" type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </div>
+    </div>
+
+    <div id="iframe" class="main">
+        <div class="tag-badge">&lt;iframe&gt;</div>
+        <h3>Inline Frame</h3>
+        <pre>&lt;iframe src="https://www.example.com" width="300" height="200"&gt;&lt;/iframe&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <iframe src="https://www.example.com" width="300" height="200" style="border:none;">
+                Your browser does not support iframes.
+            </iframe>
+        </div>
+    </div>
+
+    <div id="embed" class="main1">
+        <div class="tag-badge">&lt;embed&gt;</div>
+        <h3>Embed Tag</h3>
+        <pre>&lt;embed src="file.pdf" width="300" height="200"&gt;</pre>
+        <p><strong>Output:</strong> Embeds external content like PDFs, Flash, etc.</p>
+    </div>
+
+    <div id="object" class="main2">
+        <div class="tag-badge">&lt;object&gt;</div>
+        <h3>Object Tag</h3>
+        <pre>&lt;object data="file.pdf" type="application/pdf" width="300" height="200"&gt;
+    &lt;p&gt;Alternative text&lt;/p&gt;
+&lt;/object&gt;</pre>
+        <p><strong>Output:</strong> Embeds objects like PDFs, images, or applets.</p>
+    </div>
+
+    <div id="param" class="main">
+        <div class="tag-badge">&lt;param&gt;</div>
+        <h3>Parameter Tag</h3>
+        <pre>&lt;object data="audio.wav"&gt;
+    &lt;param name="autoplay" value="true"&gt;
+    &lt;param name="loop" value="false"&gt;
+&lt;/object&gt;</pre>
+        <p><strong>Output:</strong> Defines parameters for plugins embedded with &lt;object&gt;.</p>
+    </div>
+
+    <div id="track" class="main1">
+        <div class="tag-badge">&lt;track&gt;</div>
+        <h3>Track Tag</h3>
+        <pre>&lt;video controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    &lt;track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English"&gt;
+&lt;/video&gt;</pre>
+        <p><strong>Output:</strong> Adds text tracks (subtitles/captions) for video/audio.</p>
+    </div>
+</div>
+
+<!-- SEMANTIC ELEMENTS -->
+<div class="main">
+    <h2>🏷️ SEMANTIC ELEMENTS (12)</h2>
+    
+    <div id="semantic-header" class="main1">
+        <div class="tag-badge">&lt;header&gt;</div>
+        <h3>Header Tag</h3>
+        <pre>&lt;header&gt;
+    &lt;h1&gt;Website Title&lt;/h1&gt;
+    &lt;p&gt;Tagline or description&lt;/p&gt;
+&lt;/header&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <header style="background:#f87171; color:white; padding:10px; border-radius:5px;">
+                <h3 style="margin:0">Website Title</h3>
+                <p style="margin:0">Tagline or description</p>
+            </header>
+        </div>
+        <p><strong>Output:</strong> Represents introductory content or a group of navigational links.</p>
+    </div>
+
+    <div id="semantic-footer" class="main2">
+        <div class="tag-badge">&lt;footer&gt;</div>
+        <h3>Footer Tag</h3>
+        <pre>&lt;footer&gt;
+    &lt;p&gt;© 2024 Company Name&lt;/p&gt;
+    &lt;p&gt;Contact: info@example.com&lt;/p&gt;
+&lt;/footer&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <footer style="background:#2C3E50; color:white; padding:10px; border-radius:5px;">
+                <p style="margin:0">© 2024 Company Name</p>
+                <p style="margin:0">Contact: info@example.com</p>
+            </footer>
+        </div>
+        <p><strong>Output:</strong> Represents footer content for a section or page.</p>
+    </div>
+
+    <div id="semantic-main" class="main">
+        <div class="tag-badge">&lt;main&gt;</div>
+        <h3>Main Tag</h3>
+        <pre>&lt;main&gt;
+    &lt;h1&gt;Main Content&lt;/h1&gt;
+    &lt;p&gt;This is the primary content of the page.&lt;/p&gt;
+&lt;/main&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <main style="background:#f3f4f6; padding:10px; border-radius:5px;">
+                <h3 style="margin:0 0 10px 0">Main Content</h3>
+                <p style="margin:0">This is the primary content of the page.</p>
+            </main>
+        </div>
+        <p><strong>Output:</strong> Specifies the main content of the document.</p>
+    </div>
+
+    <div id="section" class="main1">
+        <div class="tag-badge">&lt;section&gt;</div>
+        <h3>Section Tag</h3>
+        <pre>&lt;section&gt;
+    &lt;h2&gt;About Us&lt;/h2&gt;
+    &lt;p&gt;We are a company that does amazing things.&lt;/p&gt;
+&lt;/section&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <section style="background:#e0e7ff; padding:10px; border-radius:5px;">
+                <h3 style="margin:0 0 10px 0">About Us</h3>
+                <p style="margin:0">We are a company that does amazing things.</p>
+            </section>
+        </div>
+        <p><strong>Output:</strong> Defines a section in a document (like chapters, headers, footers).</p>
+    </div>
+
+    <div id="article" class="main2">
+        <div class="tag-badge">&lt;article&gt;</div>
+        <h3>Article Tag</h3>
+        <pre>&lt;article&gt;
+    &lt;h2&gt;Blog Post Title&lt;/h2&gt;
+    &lt;p&gt;This is an independent piece of content.&lt;/p&gt;
+&lt;/article&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <article style="background:#fef3c7; padding:10px; border-radius:5px;">
+                <h3 style="margin:0 0 10px 0">Blog Post Title</h3>
+                <p style="margin:0">This is an independent piece of content.</p>
+            </article>
+        </div>
+        <p><strong>Output:</strong> Represents independent, self-contained content.</p>
+    </div>
+
+    <div id="aside" class="main">
+        <div class="tag-badge">&lt;aside&gt;</div>
+        <h3>Aside Tag</h3>
+        <pre>&lt;aside&gt;
+    &lt;h4&gt;Related Content&lt;/h4&gt;
+    &lt;p&gt;This is sidebar information.&lt;/p&gt;
+&lt;/aside&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <aside style="background:#d1fae5; padding:10px; border-radius:5px; inline-size:200px;">
+                <h4 style="margin:0 0 5px 0">Related Content</h4>
+                <p style="margin:0">This is sidebar information.</p>
+            </aside>
+        </div>
+        <p><strong>Output:</strong> Represents content indirectly related to the main content.</p>
+    </div>
+
+    <div id="nav" class="main1">
+        <div class="tag-badge">&lt;nav&gt;</div>
+        <h3>Nav Tag</h3>
+        <pre>&lt;nav&gt;
+    &lt;a href="#"&gt;Home&lt;/a&gt; |
+    &lt;a href="#"&gt;About&lt;/a&gt; |
+    &lt;a href="#"&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <nav style="background:#f1f5f9; padding:10px; border-radius:5px;">
+                <a href="#" style="margin-inline-end:10px;">Home</a>
+                <a href="#" style="margin-inline-end:10px;">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+        <p><strong>Output:</strong> Defines a set of navigation links.</p>
+    </div>
+
+    <div id="figure" class="main2">
+        <div class="tag-badge">&lt;figure&gt;</div>
+        <h3>Figure Tag</h3>
+        <pre>&lt;figure&gt;
+    &lt;img src="image.jpg" alt="Description"&gt;
+    &lt;figcaption&gt;Image caption here&lt;/figcaption&gt;
+&lt;/figure&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <figure style="background:#fef2f2; padding:10px; border-radius:5px; text-align:center;">
+                <div style="background:#cbd5e1; block-size:100px; display:flex; align-items:center; justify-content:center; border-radius:5px;">
+                    📷 Image Placeholder
+                </div>
+                <figcaption style="margin-block-start:5px;">Image caption here</figcaption>
+            </figure>
+        </div>
+        <p><strong>Output:</strong> Groups self-contained content like images with captions.</p>
+    </div>
+
+    <div id="figcaption" class="main">
+        <div class="tag-badge">&lt;figcaption&gt;</div>
+        <h3>Figcaption Tag</h3>
+        <pre>&lt;figure&gt;
+    &lt;img src="diagram.jpg" alt="Diagram"&gt;
+    &lt;figcaption&gt;Figure 1: System Architecture Diagram&lt;/figcaption&gt;
+&lt;/figure&gt;</pre>
+        <p><strong>Output:</strong> Provides a caption for the &lt;figure&gt; element.</p>
+    </div>
+
+    <div id="details" class="main1">
+        <div class="tag-badge">&lt;details&gt;</div>
+        <h3>Details Tag</h3>
+        <pre>&lt;details&gt;
+    &lt;summary&gt;Click to expand&lt;/summary&gt;
+    &lt;p&gt;This content is hidden until you click the summary.&lt;/p&gt;
+&lt;/details&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <details style="background:#f1f5f9; padding:10px; border-radius:5px;">
+                <summary style="cursor:pointer; font-weight:bold;">Click to expand</summary>
+                <p style="margin-block-start:10px;">This content is hidden until you click the summary.</p>
+            </details>
+        </div>
+        <p><strong>Output:</strong> Creates a disclosure widget that can be opened/closed.</p>
+    </div>
+
+    <div id="summary" class="main2">
+        <div class="tag-badge">&lt;summary&gt;</div>
+        <h3>Summary Tag</h3>
+        <pre>&lt;details&gt;
+    &lt;summary&gt;More Information&lt;/summary&gt;
+    &lt;p&gt;Additional details go here.&lt;/p&gt;
+&lt;/details&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <details style="background:#f1f5f9; padding:10px; border-radius:5px;">
+                <summary style="cursor:pointer; font-weight:bold; color:#f87171;">More Information</summary>
+                <p style="margin-block-start:10px;">Additional details go here.</p>
+            </details>
+        </div>
+        <p><strong>Output:</strong> Defines a visible heading for &lt;details&gt; element.</p>
+    </div>
+
+    <div id="semantic-mark" class="main">
+        <div class="tag-badge">&lt;mark&gt;</div>
+        <h3>Mark Tag (Semantic)</h3>
+        <pre>&lt;p&gt;This is a &lt;mark&gt;highlighted&lt;/mark&gt; word.&lt;/p&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <p>This is a <mark>highlighted</mark> word.</p>
+        </div>
+        <p><strong>Output:</strong> Highlights text for reference or emphasis.</p>
+    </div>
+</div>
+
+<!-- OTHER ELEMENTS -->
+<div class="main">
+    <h2>💻 OTHER ELEMENTS (15)</h2>
+    
+    <div id="script" class="main1">
+        <div class="tag-badge">&lt;script&gt;</div>
+        <h3>Script Tag</h3>
+        <pre>&lt;script&gt;
+    console.log("Hello World!");
+&lt;/script&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <p>Open console to see: <strong>"Hello World!"</strong></p>
+        </div>
+        <p><strong>Output:</strong> Embeds JavaScript code in the webpage.</p>
+    </div>
+
+    <div id="noscript" class="main2">
+        <div class="tag-badge">&lt;noscript&gt;</div>
+        <h3>NoScript Tag</h3>
+        <pre>&lt;noscript&gt;
+    This website requires JavaScript to function properly.
+&lt;/noscript&gt;</pre>
+        <p><strong>Output:</strong> Displays content only if JavaScript is disabled in the browser.</p>
+    </div>
+
+    <div id="canvas" class="main">
+        <div class="tag-badge">&lt;canvas&gt;</div>
+        <h3>Canvas Tag</h3>
+        <pre>&lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;"&gt;&lt;/canvas&gt;
+&lt;script&gt;
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#f87171";
+    ctx.fillRect(20, 20, 150, 60);
+&lt;/script&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <canvas id="demoCanvas" width="200" height="100" style="border:1px solid #000;"></canvas>
+            <script>
+                var canvas = document.getElementById("demoCanvas");
+                if(canvas){
+                    var ctx = canvas.getContext("2d");
+                    ctx.fillStyle = "#f87171";
+                    ctx.fillRect(20, 20, 150, 60);
+                }
+            </script>
+        </div>
+        <p><strong>Output:</strong> Draws graphics on the fly using JavaScript.</p>
+    </div>
+
+    <div id="svg" class="main1">
+        <div class="tag-badge">&lt;svg&gt;</div>
+        <h3>SVG Tag</h3>
+        <pre>&lt;svg width="100" height="100"&gt;
+    &lt;circle cx="50" cy="50" r="40" stroke="#f87171" stroke-width="4" fill="#34d399" /&gt;
+&lt;/svg&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="#f87171" stroke-width="4" fill="#34d399" />
+            </svg>
+        </div>
+        <p><strong>Output:</strong> Draws scalable vector graphics (SVG).</p>
+    </div>
+
+    <div id="math" class="main2">
+        <div class="tag-badge">&lt;math&gt;</div>
+        <h3>MathML Tag</h3>
+        <pre>&lt;math xmlns="http://www.w3.org/1998/Math/MathML"&gt;
+    &lt;msup&gt;
+        &lt;mi&gt;x&lt;/mi&gt;
+        &lt;mn&gt;2&lt;/mn&gt;
+    &lt;/msup&gt;
+    &lt;mo&gt;+&lt;/mo&gt;
+    &lt;msup&gt;
+        &lt;mi&gt;y&lt;/mi&gt;
+        &lt;mn&gt;2&lt;/mn&gt;
+    &lt;/msup&gt;
+    &lt;mo&gt;=&lt;/mo&gt;
+    &lt;msup&gt;
+        &lt;mi&gt;z&lt;/mi&gt;
+        &lt;mn&gt;2&lt;/mn&gt;
+    &lt;/msup&gt;
+&lt;/math&gt;</pre>
+        <p><strong>Output:</strong> Displays mathematical formulas (MathML support varies).</p>
+    </div>
+
+    <div id="template" class="main">
+        <div class="tag-badge">&lt;template&gt;</div>
+        <h3>Template Tag</h3>
+        <pre>&lt;template id="myTemplate"&gt;
+    &lt;p&gt;This content is hidden until cloned!&lt;/p&gt;
+&lt;/template&gt;</pre>
+        <p><strong>Output:</strong> Stores HTML fragments that can be used later with JavaScript.</p>
+    </div>
+
+    <div id="slot" class="main1">
+        <div class="tag-badge">&lt;slot&gt;</div>
+        <h3>Slot Tag</h3>
+        <pre>&lt;template id="cardTemplate"&gt;
+    &lt;div&gt;
+        &lt;slot name="title"&gt;Default Title&lt;/slot&gt;
+        &lt;slot name="content"&gt;Default Content&lt;/slot&gt;
+    &lt;/div&gt;
+&lt;/template&gt;</pre>
+        <p><strong>Output:</strong> Used with shadow DOM for creating web components.</p>
+    </div>
+
+    <div id="dialog" class="main2">
+        <div class="tag-badge">&lt;dialog&gt;</div>
+        <h3>Dialog Tag</h3>
+        <pre>&lt;dialog id="myDialog"&gt;
+    &lt;p&gt;This is a popup dialog box!&lt;/p&gt;
+    &lt;button onclick="document.getElementById('myDialog').close()"&gt;Close&lt;/button&gt;
+&lt;/dialog&gt;
+&lt;button onclick="document.getElementById('myDialog').showModal()"&gt;Open Dialog&lt;/button&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <dialog id="demoDialog" style="border-radius:10px; padding:20px;">
+                <p>This is a popup dialog box!</p>
+                <button onclick="document.getElementById('demoDialog').close()" style="background:#f87171; color:white; border:none; padding:5px 10px; border-radius:5px;">Close</button>
+            </dialog>
+            <button onclick="document.getElementById('demoDialog').showModal()" style="background:#34d399; color:white; border:none; padding:8px 15px; border-radius:5px; cursor:pointer;">Open Dialog</button>
+        </div>
+        <p><strong>Output:</strong> Creates a popup dialog box.</p>
+    </div>
+
+    <div id="menu" class="main">
+        <div class="tag-badge">&lt;menu&gt;</div>
+        <h3>Menu Tag</h3>
+        <pre>&lt;menu&gt;
+    &lt;li&gt;&lt;button&gt;Copy&lt;/button&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;button&gt;Paste&lt;/button&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;button&gt;Cut&lt;/button&gt;&lt;/li&gt;
+&lt;/menu&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <menu style="display:flex; gap:10px; list-style:none; padding:0; margin:0;">
+                <li><button style="background:#f87171; color:white; border:none; padding:5px 10px; border-radius:5px;">Copy</button></li>
+                <li><button style="background:#f87171; color:white; border:none; padding:5px 10px; border-radius:5px;">Paste</button></li>
+                <li><button style="background:#f87171; color:white; border:none; padding:5px 10px; border-radius:5px;">Cut</button></li>
+            </menu>
+        </div>
+        <p><strong>Output:</strong> Defines a list/menu of commands.</p>
+    </div>
+
+    <div id="wbr" class="main1">
+        <div class="tag-badge">&lt;wbr&gt;</div>
+        <h3>WBR Tag (Word Break Opportunity)</h3>
+        <pre>&lt;p&gt;ThisIsAReallyLongWordThat&lt;wbr&gt;NeedsToBreak&lt;wbr&gt;AtSpecificPoints&lt;/p&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <p style="inline-size: 200px; background:#f1f5f9; padding:10px;">ThisIsAReallyLongWordThat<wbr>NeedsToBreak<wbr>AtSpecificPoints</p>
+        </div>
+        <p><strong>Output:</strong> Suggests where to break a long word (resize window to see effect).</p>
+    </div>
+
+    <div id="data" class="main2">
+        <div class="tag-badge">&lt;data&gt;</div>
+        <h3>Data Tag</h3>
+        <pre>&lt;data value="100"&gt;One Hundred&lt;/data&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <data value="100">One Hundred</data>
+        </div>
+        <p><strong>Output:</strong> Associates machine-readable value with content.</p>
+    </div>
+
+    <div id="time" class="main">
+        <div class="tag-badge">&lt;time&gt;</div>
+        <h3>Time Tag</h3>
+        <pre>&lt;time datetime="2024-12-25"&gt;Christmas 2024&lt;/time&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <time datetime="2024-12-25">Christmas 2024</time>
+        </div>
+        <p><strong>Output:</strong> Represents a specific date/time in machine-readable format.</p>
+    </div>
+
+    <div id="ruby" class="main1">
+        <div class="tag-badge">&lt;ruby&gt;</div>
+        <h3>Ruby Tag</h3>
+        <pre>&lt;ruby&gt;
+    漢 &lt;rt&gt;かん&lt;/rt&gt;
+    字 &lt;rt&gt;じ&lt;/rt&gt;
+&lt;/ruby&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <ruby>
+                漢 <rt>かん</rt>
+                字 <rt>じ</rt>
+            </ruby>
+        </div>
+        <p><strong>Output:</strong> Shows pronunciation annotations (used for East Asian typography).</p>
+    </div>
+
+    <div id="rt" class="main2">
+        <div class="tag-badge">&lt;rt&gt;</div>
+        <h3>RT Tag (Ruby Text)</h3>
+        <pre>&lt;ruby&gt;
+    Tokyo &lt;rt&gt;とうきょう&lt;/rt&gt;
+&lt;/ruby&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <ruby>
+                Tokyo <rt>とうきょう</rt>
+            </ruby>
+        </div>
+        <p><strong>Output:</strong> Provides pronunciation info for ruby annotations.</p>
+    </div>
+
+    <div id="rp" class="main">
+        <div class="tag-badge">&lt;rp&gt;</div>
+        <h3>RP Tag (Ruby Parentheses)</h3>
+        <pre>&lt;ruby&gt;
+    日本 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;にほん&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+&lt;/ruby&gt;</pre>
+        <div class="output-box" style="background:#f0fdf4; padding:10px; border-radius:10px; margin-block-start:10px;">
+            <ruby>
+                日本 <rp>(</rp><rt>にほん</rt><rp>)</rp>
+            </ruby>
+        </div>
+        <p><strong>Output:</strong> Provides parentheses around ruby text for browsers that don't support &lt;ruby&gt;.</p>
+    </div>
+</div>
+
+<script>
+function scrollToSection(sectionId) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+        element.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest'
+        });
+        
+        // Highlight effect/////////////////////////////////////////////////////////
+        element.style.transition = 'all 0.3s ease';
+        element.style.boxShadow = '0 0 0 3px rgba(248,113,113,0.5)';
+        setTimeout(() => {
+            element.style.boxShadow = '';
+        }, 1000);
+    } else {
+        console.log("Section not found: " + sectionId);
+    }
+}
+</script>
+
+</body>
+</html>

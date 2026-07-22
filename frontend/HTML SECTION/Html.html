@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements Documentation</title>
+    <link rel="stylesheet" href="html.css">
+    
+</head>
+
+<body>
+
+<header>
+<img src="/images/logo.png" alt="Logo" class="logo" width="200" height="50">
+    <div class="nav-right">
+        <button class="home-btn" onclick="window.location.href='html1.html'">NEXT 2</button>
+        <button class="home-btn" onclick="window.location.href='html2.html'">NEXT 3</button>
+        <button class="home-btn" onclick="window.location.href='oldhtml.html'">old tags</button>
+    </div>
+</header>
+
+<div class="nav">
+    <h2>HTML ELEMENTS 1 </h2>
+</div>
+
+<div class="sidebar">
+    <div class="he he-title">DOCUMENT (9)</div>
+    <div class="he1" onclick="scrollToSection('doctype')">&lt;!DOCTYPE&gt;</div>
+    <div class="he1" onclick="scrollToSection('html-tag')">&lt;html&gt;</div>
+    <div class="he1" onclick="scrollToSection('head-tag')">&lt;head&gt;</div>
+    <div class="he1" onclick="scrollToSection('title-tag')">&lt;title&gt;</div>
+    <div class="he1" onclick="scrollToSection('body-tag')">&lt;body&gt;</div>
+    <div class="he1" onclick="scrollToSection('meta-tag')">&lt;meta&gt;</div>
+    <div class="he1" onclick="scrollToSection('link-tag')">&lt;link&gt;</div>
+    <div class="he1" onclick="scrollToSection('base-tag')">&lt;base&gt;</div>
+    <div class="he1" onclick="scrollToSection('style-tag')">&lt;style&gt;</div>
+
+    <div class="he he-title"> TEXT FORMATTING (30)</div>
+    <div class="he1" onclick="scrollToSection('headings')">&lt;h1&gt;-&lt;h6&gt;</div>
+    <div class="he1" onclick="scrollToSection('paragraph')">&lt;p&gt;</div>
+    <div class="he1" onclick="scrollToSection('linebreak')">&lt;br&gt;</div>
+    <div class="he1" onclick="scrollToSection('horizontal')">&lt;hr&gt;</div>
+    <div class="he1" onclick="scrollToSection('bold')">&lt;b&gt;</div>
+    <div class="he1" onclick="scrollToSection('strong')">&lt;strong&gt;</div>
+    <div class="he1" onclick="scrollToSection('italic')">&lt;i&gt;</div>
+    <div class="he1" onclick="scrollToSection('emphasized')">&lt;em&gt;</div>
+    <div class="he1" onclick="scrollToSection('mark')">&lt;mark&gt;</div>
+    <div class="he1" onclick="scrollToSection('small')">&lt;small&gt;</div>
+    <div class="he1" onclick="scrollToSection('del')">&lt;del&gt;</div>
+    <div class="he1" onclick="scrollToSection('ins')">&lt;ins&gt;</div>
+    <div class="he1" onclick="scrollToSection('sub')">&lt;sub&gt;</div>
+    <div class="he1" onclick="scrollToSection('sup')">&lt;sup&gt;</div>
+    <div class="he1" onclick="scrollToSection('underline')">&lt;u&gt;</div>
+    <div class="he1" onclick="scrollToSection('abbr')">&lt;abbr&gt;</div>
+    <div class="he1" onclick="scrollToSection('address')">&lt;address&gt;</div>
+    <div class="he1" onclick="scrollToSection('blockquote')">&lt;blockquote&gt;</div>
+    <div class="he1" onclick="scrollToSection('quote')">&lt;q&gt;</div>
+    <div class="he1" onclick="scrollToSection('cite')">&lt;cite&gt;</div>
+    <div class="he1" onclick="scrollToSection('bdo')">&lt;bdo&gt;</div>
+    <div class="he1" onclick="scrollToSection('bdi')">&lt;bdi&gt;</div>
+    <div class="he1" onclick="scrollToSection('pre')">&lt;pre&gt;</div>
+    <div class="he1" onclick="scrollToSection('code')">&lt;code&gt;</div>
+    <div class="he1" onclick="scrollToSection('kbd')">&lt;kbd&gt;</div>
+    <div class="he1" onclick="scrollToSection('samp')">&lt;samp&gt;</div>
+    <div class="he1" onclick="scrollToSection('var')">&lt;var&gt;</div>
+    <div class="he1" onclick="scrollToSection('span')">&lt;span&gt;</div>
+    <div class="he1" onclick="scrollToSection('div')">&lt;div&gt;</div>
+
+    <div class="he he-title"> LISTS (6)</div>
+    <div class="he1" onclick="scrollToSection('unordered-list')">&lt;ul&gt;</div>
+    <div class="he1" onclick="scrollToSection('ordered-list')">&lt;ol&gt;</div>
+    <div class="he1" onclick="scrollToSection('list-item')">&lt;li&gt;</div>
+    <div class="he1" onclick="scrollToSection('desc-list')">&lt;dl&gt;</div>
+    <div class="he1" onclick="scrollToSection('dt')">&lt;dt&gt;</div>
+    <div class="he1" onclick="scrollToSection('dd')">&lt;dd&gt;</div>
+</div>
+
+<h2 style="text-align: center; color: #e05e5e">ROOT & DOCUMENT STRUCTURE ELEMENTS (9)</h2>
+
+<div id="doctype" class="main20">
+    <div class="main11">
+        <div class="tag-badge">&lt;!DOCTYPE&gt;</div>
+        <h3>Document Type Declaration</h3>
+        <p>&lt;!DOCTYPE html&gt;</p>
+    </div><br>
+    <div class="main11">
+    <p><strong>Output:</strong> Tells the browser this is HTML5 document.</p>
+    </div>
+</div>
+
+<div id="html-tag" class="main21">
+    <div class="main12">
+        <div class="tag-badge">&lt;html&gt;</div>
+        <h3>HTML Root Element</h3>
+        <pre>&lt;html lang="en"&gt;
+    &lt;!-- All content goes here --&gt;
+&lt;/html&gt;</pre>
+    </div><br>
+    <div class="main12">    
+    <p><strong>Output:</strong> Root container for entire HTML document.</p>
+    </div>
+</div>
+
+<div id="head-tag" class="main22">
+    <div class="main13">
+        <div class="tag-badge">&lt;head&gt;</div>
+        <h3>Document Head</h3>
+        <pre>&lt;head&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;</pre>
+    </div><br>
+    <div class="main13">
+    <p><strong>Output:</strong> Contains metadata, title, links, styles.</p>
+    </div>
+</div>
+
+<div id="title-tag" class="main20">
+    <div class="main11">&lt;title&gt;
+    <h3>Document Title</h3>
+    <pre>&lt;title&gt;My Awesome Website&lt;/title&gt;</pre></div><br>
+    <div class="main11">
+        <p><strong>Output:</strong> Shows "My Awesome Website" in browser tab.</p>
+    </div>
+</div>
+
+<div id="body-tag" class="main21">
+    <div class="main12">&lt;body&gt;
+    <h3>Document Body</h3>
+    <pre>&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;p&gt;All visible content.&lt;/p&gt;
+&lt;/body&gt;</pre></div><br>
+    <div class="main12">
+        <h1>Hello World!</h1>
+        <p>All visible content.</p>
+    </div>
+</div>
+
+<div id="meta-tag" class="main22">
+    <div class="main13">
+        &lt;meta&gt;
+    <h3>Metadata:</h3>
+    <pre>&lt;meta charset="UTF-8"&gt;
+       &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+     &lt;meta name="description" content="Free tutorials"&gt;
+     &lt;meta name="author" content="Code One"&gt;</pre></div><br>
+    <div class="main13">
+    <p><strong>Output:</strong> Provides metadata for browsers and search engines.</p>
+     </div>
+</div>
+
+<div id="link-tag" class="main20">
+    <div class="main11">&lt;link&gt;
+    <h3>External Resource Link:</h3>
+    <pre>&lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;link rel="icon" href="favicon.ico"&gt;
+&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</pre></div><br>
+<div class="main11">
+    <p><strong>Output:</strong> Links external CSS, icons, fonts.</p>
+</div>
+</div>
+
+<div id="base-tag" class="main21">
+    <div class="main12">&lt;base&gt;
+    <h3>Base URL:</h3>
+    <pre>&lt;base href="https://www.example.com/" target="_blank"&gt;</pre></div><br>
+    <div class="main12">
+    <p><strong>Output:</strong> Sets base URL for all relative links.</p>
+    </div>
+</div>
+
+<div id="style-tag" class="main22">
+    <div class="main13">&lt;style&gt;
+    <h3>Style Tag:</h3>
+    <pre>&lt;style&gt;
+    .my-class { color: red; font-size: 20px; }
+&lt;/style&gt;
+&lt;p class="my-class"&gt;Styled text!&lt;/p&gt;</pre></div><br>
+    <div class="main13">
+        <style>.demo-style { color: red; font-size: 20px; }</style>
+        <p class="demo-style">Styled text!</p>
+    </div>
+</div>
+
+<!-- TEXT FORMATTING ELEMENTS --/////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <h2 style="color:#34d399;text-align:center;"> TEXT FORMATTING ELEMENTS</h2>
+    
+    <div id="headings" class="main21">
+        <div class="main12">&lt;h1&gt; to &lt;h6&gt;
+        <h3>Heading Tags</h3>
+        <pre>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;
+&lt;h3&gt;Level 3&lt;/h3&gt;
+&lt;h4&gt;Level 4&lt;/h4&gt;
+&lt;h5&gt;Level 5&lt;/h5&gt;
+&lt;h6&gt;Level 6&lt;/h6&gt;</pre></div><br>
+        <div class="main12">
+             <p><strong>Output:</strong> Displays headings with different sizes.</p>
+            <h1>Main Heading</h1>
+            <h2>Subheading</h2>
+            <h3>Level 3</h3>
+            <h4>Level 4</h4>
+            <h5>Level 5</h5>
+            <h6>Level 6</h6>
+        </div>
+    </div>
+
+    <div id="paragraph" class="main22">
+        <div class="main13">&lt;p&gt;
+        <h3>Paragraph</h3>
+        <pre>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</pre></div><br>
+        <div class="main13">
+             <p><strong>Output:</strong> Displays a block of text.</p>
+            <p>This is a paragraph of text.</p>
+        </div>
+    </div>
+
+    <div id="linebreak" class="main20">
+        <div class="main11">&lt;br&gt;
+        <h3>Line Break</h3>
+        <pre>Line 1&lt;br&gt;Line 2&lt;br&gt;Line 3</pre></div><br>
+        <div class="main11">
+             <p><strong>Output:</strong> Inserts line breaks.</p>
+            Line 1<br>Line 2<br>Line 3
+        </div>
+    </div>
+
+    <div id="horizontal" class="main21">
+        <div class="main12">&lt;hr&gt;
+        <h3>Horizontal Rule</h3>
+        <pre>&lt;p&gt;Above line&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Below line&lt;/p&gt;</pre></div><br>
+        <div class="main12">
+            <p>Above line</p>
+            <hr>
+            <p>Below line</p>
+        </div>
+    </div>
+
+    <div id="bold" class="main22">
+        <div class="main13">&lt;b&gt;
+        <h3>Bold Text</h3>
+        <pre>&lt;b&gt;Bold text&lt;/b&gt;</pre></div><br>
+        <div class="main13">
+            <b>Bold text</b>
+        </div>
+    </div>
+
+    <div id="strong" class="main20">
+        <div class="main11">&lt;strong&gt;
+        <h3>Strong Text</h3>
+        <pre>&lt;strong&gt;Important text&lt;/strong&gt;</pre></div><br>
+        <div class="main11">
+                <p><strong>Output:</strong> Displays bold text with strong importance.</p>
+            <strong>Important text</strong>
+        </div>
+    </div>
+
+    <div id="italic" class="main21">
+        <div class="main12 ">&lt;i&gt;
+        <h3>Italic Text</h3>
+        <pre>&lt;i&gt;Italic text&lt;/i&gt;</pre></div><br>
+        <div class="main12">
+             <p><strong>Output:</strong> Displays italicized text.</p>
+            <i>Italic text</i>
+        </div>
+    </div>
+
+    <div id="emphasized" class="main22">
+        <div class="main13">&lt;em&gt;
+        <h3>Emphasized Text</h3>
+        <pre>&lt;em&gt;Emphasized text&lt;/em&gt;</pre></div><br>
+        <div class="main13">
+                <p><strong>Output:</strong> Displays emphasized text (usually italic).</p>
+            <em>Emphasized text</em>
+        </div>
+    </div>
+
+    <div id="mark" class="main20">
+        <div class="main11">&lt;mark&gt;
+        <h3>Highlighted Text</h3>
+        <pre>&lt;p&gt;This is &lt;mark&gt;highlighted&lt;/mark&gt; text.&lt;/p&gt;</pre></div><br>
+        <div class="main11">
+             <p><strong>Output:</strong> Highlights text with a yellow background.</p>
+            <p>This is <mark>highlighted</mark> text.</p>
+        </div>
+    </div>
+
+    <div id="small" class="main21">
+        <div class="main12">&lt;small&gt;
+        <h3>Small Text</h3>
+        <pre>&lt;p&gt;Normal &lt;small&gt;smaller text&lt;/small&gt;&lt;/p&gt;</pre></div><br>
+        <div class="main12">
+             <p><strong>Output:</strong> Displays smaller text.</p>
+            <p>Normal <small>smaller text</small></p>
+        </div>
+    </div>
+
+    <div id="del" class="main22">
+        <div class="main13">&lt;del&gt;
+        <h3>Deleted Text</h3>
+        <pre>&lt;del&gt;Old price $100&lt;/del&gt;</pre></div><br>
+        <div class="main13">
+             <p><strong>Output:</strong> Displays deleted text (usually with a line through it).</p>
+            <del>Old price $100</del>
+        </div>
+    </div>
+
+    <div id="ins" class="main20">
+        <div class="main11">&lt;ins&gt;
+        <h3>Inserted Text</h3>
+        <pre>&lt;ins&gt;New price $80&lt;/ins&gt;</pre></div><br>
+        <div class="main11">
+             <p><strong>Output:</strong> Displays inserted text (usually with a underline).</p>
+            <ins>New price $80</ins>
+        </div>
+    </div>
+
+    <div id="sub" class="main21">
+        <div class="main12">&lt;sub&gt;
+        <h3>Subscript</h3>
+        <pre>H&lt;sub&gt;2&lt;/sub&gt;O</pre></div><br>
+        <div class="main12">
+             <p><strong>Output:</strong> Displays subscript text.</p>
+            H<sub>2</sub>O
+        </div>
+    </div>
+
+    <div id="sup" class="main22">
+        <div class="main13">&lt;sup&gt;
+        <h3>Superscript</h3>
+        <pre>x&lt;sup&gt;2&lt;/sup&gt;</pre></div><br>
+        <div class="main13">
+             <p><strong>Output:</strong> Displays superscript text.</p>
+            x<sup>2</sup>
+        </div>
+    </div>
+
+    <div id="underline" class="main20">
+        <div class="main11">&lt;u&gt;
+        <h3>Underlined Text</h3>
+        <pre>&lt;u&gt;Underlined text&lt;/u&gt;</pre></div><br>
+        <div class="main11">
+             <p><strong>Output:</strong> Displays underlined text.</p>
+            <u>Underlined text</u>
+        </div>
+    </div>
+
+    <div id="abbr" class="main21">
+        <div class="main12">&lt;abbr&gt;
+        <h3>Abbreviation</h3>
+        <pre>&lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt;</pre></div><br>
+        <div class="main12">
+             <p><strong>Output:</strong> Displays an abbreviation with a tooltip.</p>
+            <abbr title="World Health Organization">WHO</abbr> (Hover to see full form)
+        </div>
+    </div>
+
+    <div id="address" class="main22">
+        <div class="main13">&lt;address&gt;
+        <h3>Address</h3>
+        <pre>&lt;address&gt;
+    Written by Code One&lt;br&gt;
+    Visit us: example.com&lt;br&gt;
+    Box 564, USA
+&lt;/address&gt;</pre></div><br>
+        <div class="main13">
+             <p><strong>Output:</strong> Displays contact information.</p>
+            <address>
+                Written by Code One<br>
+                Visit us: example.com<br>
+                Box 564, USA
+            </address>
+        </div>
+    </div>
+
+    <div id="blockquote" class="main20">
+        <div class="main11">&lt;blockquote&gt;
+        <h3>Block Quote</h3>
+        <pre>&lt;blockquote&gt;
+    The only limit is your imagination.
+&lt;/blockquote&gt;</pre></div><br>
+        <div class="main11">
+             <p><strong>Output:</strong> Displays a block-level quotation.</p>
+            <blockquote>
+                The only limit is your imagination.
+            </blockquote>
+        </div>
+    </div>
+
+    <div id="quote" class="main21">
+        <div class="main12">&lt;q&gt;
+        <h3>Inline Quote</h3>
+        <pre>&lt;q&gt;This is a short quote&lt;/q&gt;</pre></div><br>
+        <div class="main12">
+             <p><strong>Output:</strong> Displays an inline quotation (usually with quotation marks).</p>
+            <q>This is a short quote</q>
+        </div>
+    </div>
+
+    <div id="cite" class="main22">
+        <div class="main13">&lt;cite&gt;
+        <h3>Citation</h3>
+        <pre>&lt;cite&gt;The Mona Lisa&lt;/cite&gt; by Leonardo da Vinci</pre></div><br>
+        <div class="main13">
+             <p><strong>Output:</strong> Displays a citation (usually in italics).</p>
+            <cite>The Mona Lisa</cite> by Leonardo da Vinci
+        </div>
+    </div>
+
+    <div id="bdo" class="main20">
+        <div class="main11">&lt;bdo&gt;
+        <h3>Bi-Directional Override</h3>
+        <pre>&lt;bdo dir="rtl"&gt;This text goes right to left&lt;/bdo&gt;</pre></div><br>
+        <div class="main11">
+            <bdo dir="rtl">This text goes right to left</bdo>
+        </div>
+    </div>
+
+    <div id="bdi" class="main21">
+        <div class="main12">&lt;bdi&gt;
+        <h3>Bi-Directional Isolate</h3>
+        <pre>&lt;ul&gt;
+    &lt;li&gt;User &lt;bdi&gt;John&lt;/bdi&gt;: 80 points&lt;/li&gt;
+    &lt;li&gt;User &lt;bdi&gt;أحمد&lt;/bdi&gt;: 90 points&lt;/li&gt;
+&lt;/ul&gt;</pre></div><br>
+        <div class="main12">
+             <p><strong>Output:</strong> Isolates the directionality of text.</p>
+            <ul>
+                <li>User <bdi>John</bdi>: 80 points</li>
+                <li>User <bdi>أحمد</bdi>: 90 points</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="pre" class="main22">
+        <div class="main13">&lt;pre&gt;
+        <h3>Preformatted Text</h3>
+        <pre>&lt;pre&gt;
+    function hello() {
+        console.log("Hello!");
+    }
+&lt;/pre&gt;</pre></div><br>
+        <div class="main13">
+             <p><strong>Output:</strong> Displays preformatted text.</p>
+            <pre style="background:#f0fdf4; color:#333; padding:10px;">
+    function hello() {
+        console.log("Hello!");
+    }
+            </pre>
+        </div>
+    </div>
+
+    <div id="code" class="main20">
+        <div class="main11">&lt;code&gt;
+        <h3>Code</h3>
+        <pre>&lt;code&gt;console.log("Hello World!");&lt;/code&gt;</pre></div><br>
+        <div class="main11">
+             <p><strong>Output:</strong> Displays code.</p>
+            <code>console.log("Hello World!");</code>
+        </div>
+    </div>
+
+    <div id="kbd" class="main21">
+        <div class="main12">&lt;kbd&gt;
+        <h3>Keyboard Input</h3>
+        <pre>Press &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt; to copy</pre></div><br>
+        <div class="main12">
+             <p><strong>Output:</strong> Displays keyboard input.</p>
+            Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy
+        </div>
+    </div>
+
+    <div id="samp" class="main22">
+        <div class="main13">&lt;samp&gt;
+        <h3>Sample Output</h3>
+        <pre>&lt;samp&gt;Hello World!&lt;/samp&gt;</pre></div><br>
+        <div class="main13">
+             <p><strong>Output:</strong> Displays sample output.</p>
+            <samp>Hello World!</samp>
+        </div>
+    </div>
+
+    <div id="var" class="main20">
+        <div class="main11">&lt;var&gt;
+        <h3>Variable</h3>
+        <pre>&lt;var&gt;x&lt;/var&gt; = &lt;var&gt;y&lt;/var&gt; + &lt;var&gt;z&lt;/var&gt;</pre></div><br>
+        <div class="main11">
+             <p><strong>Output:</strong> Displays a variable.</p>
+            <var>x</var> = <var>y</var> + <var>z</var>
+        </div>
+    </div>
+
+    <div id="span" class="main21">
+        <div class="main12">&lt;span&gt;
+        <h3>Inline Container</h3>
+        <pre>&lt;span style="color: red;"&gt;RED text&lt;/span&gt;</pre></div><br>
+        <div class="main12">
+             <p><strong>Output:</strong> Displays inline text with red color.</p>
+            <span style="color: red;">RED text</span>
+        </div>
+    </div>
+
+    <div id="div" class="main22">
+        <div class="main13">&lt;div&gt;
+        <h3>Block Container</h3>
+        <pre>&lt;div style="background: lightblue; padding: 10px;"&gt;
+    This is a div container
+&lt;/div&gt;</pre></div><br>
+        <div class="main13">
+             <p><strong>Output:</strong> Displays a block-level container.</p>
+            <div style="background: lightblue; padding: 10px;">
+                This is a div container
+            </div>
+        </div>
+    </div>
+
+
+<!-- LIST ELEMENTS --/////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <h2 style="color:#facc15;text-align:center;"> LIST ELEMENTS</h2>
+    
+    <div id="unordered-list" class="main22">
+        <div class="main13">&lt;ul&gt; &amp; &lt;li&gt;
+        <h3>Unordered List</h3>
+        <pre>&lt;ul&gt;
+    &lt;li&gt;Apple&lt;/li&gt;
+    &lt;li&gt;Banana&lt;/li&gt;
+    &lt;li&gt;Orange&lt;/li&gt;
+&lt;/ul&gt;</pre></div><br>
+        <div class="main13">
+             <p><strong>Output:</strong> Displays a bulleted list.</p>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Orange</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="ordered-list" class="main20">
+        <div class="main11">&lt;ol&gt; &amp; &lt;li&gt;
+        <h3>Ordered List</h3>
+        <pre>&lt;ol&gt;
+    &lt;li&gt;First step&lt;/li&gt;
+    &lt;li&gt;Second step&lt;/li&gt;
+    &lt;li&gt;Third step&lt;/li&gt;
+&lt;/ol&gt;</pre></div><br>
+        <div class="main11">
+             <p><strong>Output:</strong> Displays a numbered list.</p>
+            <ol>
+                <li>First step</li>
+                <li>Second step</li>
+                <li>Third step</li>
+            </ol>
+        </div>
+    </div>
+
+    <div id="desc-list" class="main21">
+        <div class="main12">&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;
+        <h3>Description List</h3>
+        <pre>&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+&lt;/dl&gt;</pre></div><br>
+        <div class="main12">
+             <p><strong>Output:</strong> Displays a list of terms and descriptions.</p>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+            </dl>
+        </div>
+    </div>
+
+
+<footer>
+    <p><strong>© 2026 Code in One. All rights reserved.</strong></p>
+</footer>
+
+<script>
+function scrollToSection(sectionId) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+        element.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest'
+        });
+        
+        // Optional: Add highlight effect///////////////////////////////////////
+        element.style.transition = 'all 0.3s ease';
+        element.style.boxShadow = '0 0 0 3px rgba(248,113,113,0.5)';
+        setTimeout(() => {
+            element.style.boxShadow = '';
+        }, 1000);
+    } else {
+        console.log("Section not found: " + sectionId);
+    }
+}
+</script>
+
+</body>
+</html>

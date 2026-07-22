@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Complete Tutorial - All JS Elements | Code One</title>
+    <link rel="stylesheet" href="java.css">
+</head>
+<body>
+
+<header>
+     <img src="logo.png" alt="Logo" class="logo" onerror="this.src='logo.png'; this.onerror=null;"><br>
+    <div class="nav-right">
+        <button class="home-btn" onclick="window.location.href='html1.html'">NEXT 2</button>
+        <button class="home-btn" onclick="window.location.href='html2.html'">NEXT 3</button>
+        <button class="home-btn" onclick="window.location.href='oldhtml.html'">old tags</button>
+    </div>
+</header>
+
+<div class="nav">
+    <h2>JAVA ELEMENTS 1 </h2>
+</div>
+
+<div class="sidebar">
+    <div class="he he-title"> BASICS (15)</div>
+    <div class="he1" onclick="scrollToSection('variables')">Variables (var, let, const)</div>
+    <div class="he1" onclick="scrollToSection('datatypes')">Data Types (8 types)</div>
+    <div class="he1" onclick="scrollToSection('operators')">Operators (50+)</div>
+
+    <div class="he he-title">CONDITIONALS &amp; LOOPS (11)</div>
+<div class="he1" onclick="scrollToSection('if')">if</div>
+<div class="he1" onclick="scrollToSection('else')">else</div>
+<div class="he1" onclick="scrollToSection('else-if')">else if</div>
+<div class="he1" onclick="scrollToSection('switch')">switch</div>
+<div class="he1" onclick="scrollToSection('ternary')">ternary</div>
+<div class="he1" onclick="scrollToSection('for')">for</div>
+<div class="he1" onclick="scrollToSection('while')">while</div>
+<div class="he1" onclick="scrollToSection('do-while')">do-while</div>
+<div class="he1" onclick="scrollToSection('for-in')">for-in</div>
+<div class="he1" onclick="scrollToSection('for-of')">for-of</div>
+
+    <div class="he he-title"> FUNCTIONS (12)</div>
+    <div class="he1" onclick="scrollToSection('functions')">function</div>
+    <div class="he1" onclick="scrollToSection('arrow')">arrow</div>
+    <div class="he1" onclick="scrollToSection('async')">async</div>
+    <div class="he1" onclick="scrollToSection('await')">await</div>
+    <div class="he1" onclick="scrollToSection('generator')">generator</div>
+
+    <div class="he he-title"> ARRAYS (35+)</div>
+    <div class="he1" onclick="scrollToSection('push')">push</div>
+    <div class="he1" onclick="scrollToSection('pop')">pop</div>
+    <div class="he1" onclick="scrollToSection('map')">map</div>
+    <div class="he1" onclick="scrollToSection('filter')">filter</div>
+    <div class="he1" onclick="scrollToSection('reduce')">reduce</div>
+    <div class="he1" onclick="scrollToSection('foreach')">forEach</div>
+
+    <div class="he he-title">📝 STRINGS (30+)</div>
+    <div class="he1" onclick="scrollToSection('length')">length</div>
+    <div class="he1" onclick="scrollToSection('slice')">slice</div>
+    <div class="he1" onclick="scrollToSection('replace')">replace</div>
+    <div class="he1" onclick="scrollToSection('split')">split</div>
+    <div class="he1" onclick="scrollToSection('trim')">trim</div>
+
+    <div class="he he-title">🔢 NUMBERS &amp; MATH (20+)</div>
+    <div class="he1" onclick="scrollToSection('parseint')">parseInt</div>
+    <div class="he1" onclick="scrollToSection('tofixed')">toFixed</div>
+    <div class="he1" onclick="scrollToSection('math-random')">Math.random</div>
+    <div class="he1" onclick="scrollToSection('math-round')">Math.round</div>
+
+    <div class="he he-title">🎯 OBJECTS (25+)</div>
+    <div class="he1" onclick="scrollToSection('keys')">keys</div>
+    <div class="he1" onclick="scrollToSection('values')">values</div>
+    <div class="he1" onclick="scrollToSection('entries')">entries</div>
+    <div class="he1" onclick="scrollToSection('assign')">assign</div>
+    <div class="he1" onclick="scrollToSection('freeze')">freeze</div>
+
+    <div class="he he-title">⏰ DATE &amp; TIME (20+)</div>
+    <div class="he1" onclick="scrollToSection('new-date')">new Date</div>
+    <div class="he1" onclick="scrollToSection('getfullyear')">getFullYear</div>
+    <div class="he1" onclick="scrollToSection('setmonth')">setMonth</div>
+
+    <div class="he he-title">🎨 DOM (50+)</div>
+    <div class="he1" onclick="scrollToSection('getelementbyid')">getElementById</div>
+    <div class="he1" onclick="scrollToSection('queryselector')">querySelector</div>
+    <div class="he1" onclick="scrollToSection('addeventlistener')">addEventListener</div>
+
+    <div class="he he-title">🖱️ EVENTS (40+)</div>
+    <div class="he1" onclick="scrollToSection('click')">click</div>
+    <div class="he1" onclick="scrollToSection('mouseover')">mouseover</div>
+    <div class="he1" onclick="scrollToSection('keydown')">keydown</div>
+    <div class="he1" onclick="scrollToSection('submit')">submit</div>
+    <div class="he1" onclick="scrollToSection('load')">load</div>
+
+    <div class="he he-title">💾 STORAGE &amp; WINDOW (20+)</div>
+    <div class="he1" onclick="scrollToSection('localstorage')">localStorage</div>
+    <div class="he1" onclick="scrollToSection('sessionstorage')">sessionStorage</div>
+    <div class="he1" onclick="scrollToSection('alert')">alert</div>
+    <div class="he1" onclick="scrollToSection('confirm')">confirm</div>
+
+    <div class="he he-title">⚡ ADVANCED (30+)</div>
+    <div class="he1" onclick="scrollToSection('promise')">Promise</div>
+    <div class="he1" onclick="scrollToSection('async-await')">async/await</div>
+    <div class="he1" onclick="scrollToSection('fetch')">fetch</div>
+    <div class="he1" onclick="scrollToSection('class')">class</div>
+    <div class="he1" onclick="scrollToSection('json')">JSON</div>
+</div>
+<div class="main-section">
+
+    <!-- ==================== VARIABLES & DATA TYPES ==================== -->
+    <div id="variables" class="content-box">
+        <h2>📌 VARIABLES & DATA TYPES</h2>
+
+        <div id="var" class="main">
+            <div class="js-badge">var | let | const</div>
+            <h3>Variable Declarations</h3>
+            <pre>// var - function scoped (older way)
+var name = "John";
+var age = 25;
+
+// let - block scoped (can be reassigned)
+let city = "New York";
+city = "Los Angeles";
+
+// const - block scoped (cannot be reassigned)
+const PI = 3.14159;
+// PI = 3.14; // ERROR!</pre>
+            <div class="output-box">
+                <p><strong>Output:</strong></p>
+                <p id="varDemo"></p>
+                <button onclick="document.getElementById('varDemo').innerHTML = 'var: John<br>let: Los Angeles<br>const: 3.14159'">Run Code</button>
+            </div>
+        </div>
+
+        <div id="datatypes" class="main1">
+            <div class="js-badge">8 Data Types</div>
+            <h3>JavaScript Data Types</h3>
+            <pre>// Primitive Data Types (7 types)
+let str = "Hello";        // String
+let num = 42;             // Number
+let big = 9007199254740991n; // BigInt
+let bool = true;          // Boolean
+let undef = undefined;    // Undefined
+let nul = null;           // Null
+let sym = Symbol("id");   // Symbol
+
+// Reference Data Type (1 type)
+let obj = { name: "John", age: 25 };  // Object
+let arr = [1, 2, 3];      // Array
+let func = function() {};  // Function</pre>
+            <div class="output-box">
+                <p><strong>Output:</strong></p>
+                <p id="datatypeDemo"></p>
+                <button onclick="document.getElementById('datatypeDemo').innerHTML = 'String: Hello<br>Number: 42<br>Boolean: true<br>Object: {name: John}'">Run Code</button>
+            </div>
+        </div>
+
+        <div id="operators" class="main2">
+            <div class="js-badge">50+ Operators</div>
+            <h3>JavaScript Operators</h3>
+            <pre>// Arithmetic Operators
+let sum = 10 + 5;     // Addition: 15
+let diff = 10 - 5;    // Subtraction: 5
+let product = 10 * 5; // Multiplication: 50
+let quotient = 10 / 5; // Division: 2
+let remainder = 10 % 3; // Modulus: 1
+let power = 2 ** 3;   // Exponentiation: 8
+
+// Assignment Operators
+let x = 10;
+x += 5;  // x = 15
+x -= 3;  // x = 12
+x *= 2;  // x = 24
+x /= 4;  // x = 6
+x++;     // Increment: 7
+x--;     // Decrement: 6
+
+// Comparison Operators
+5 == "5"   // true (equal value)
+5 === "5"  // false (equal value & type)
+5 != "5"   // false
+5 !== "5"  // true
+5 > 3      // true
+5 < 10     // true
+5 >= 5     // true
+
+// Logical Operators
+true && true   // true (AND)
+true || false  // true (OR)
+!true          // false (NOT)
+
+// Ternary Operator
+let age = 18;
+let canVote = age >= 18 ? "Yes" : "No";  // "Yes"</pre>
+            <div class="output-box">
+                <p><strong>Output:</strong></p>
+                <p id="operatorDemo"></p>
+                <button onclick="document.getElementById('operatorDemo').innerHTML = '10 + 5 = 15<br>10 % 3 = 1<br>5 === 5 = false<br>Ternary: 18 >= 18 ? Yes : No = Yes'">Run Code</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== CONDITIONALS & LOOPS ==================== -->
+    <div id="ifelse" class="content-box">
+        <h2>🔄 CONDITIONALS & LOOPS</h2>
+
+        <div id="if" class="main">
+            <div class="js-badge">if | else | else if | switch | ternary</div>
+            <h3>Conditional Statements</h3>
+            <pre>// if-else statement
+let score = 85;
+if (score >= 90) {
+    console.log("Grade A");
+} else if (score >= 80) {
+    console.log("Grade B");
+} else if (score >= 70) {
+    console.log("Grade C");
+} else {
+    console.log("Grade F");
+}
+
+// switch statement
+let day = "Monday";
+switch(day) {
+    case "Monday":
+        console.log("Start of week");
+        break;
+    case "Friday":
+        console.log("Weekend coming");
+        break;
+    default:
+        console.log("Mid week");
+}
+
+// Ternary operator
+let age = 20;
+let status = age >= 18 ? "Adult" : "Minor";</pre>
+            <div class="output-box">
+                <p><strong>Output:</strong></p>
+                <p id="conditionDemo"></p>
+                <button onclick="let score=85; let grade=(score>=90)?'A':(score>=80)?'B':(score>=70)?'C':'F'; document.getElementById('conditionDemo').innerHTML='Score: 85 → Grade: '+grade">Run Conditional</button>
+            </div>
+        </div>
+
+        <div id="loops" class="main1">
+            <div id="for" class="js-badge">for | while | do-while | for-in | for-of</div>
+            <h3>Loops</h3>
+            <pre>// for loop
+for (let i = 0; i < 5; i++) {
+    console.log(i);  // 0,1,2,3,4
+}
+
+// while loop
+let i = 0;
+while (i < 5) {
+    console.log(i);
+    i++;
+}
+
+// do-while loop (runs at least once)
+let j = 0;
+do {
+    console.log(j);
+    j++;
+} while (j < 5);
+
+// for-in loop (objects)
+let person = {name: "John", age: 30};
+for (let key in person) {
+    console.log(key + ": " + person[key]);
+}
+
+// for-of loop (arrays)
+let colors = ["red", "green", "blue"];
+for (let color of colors) {
+    console.log(color);
+}</pre>
+            <div class="output-box">
+                <p><strong>Output:</strong></p>
+                <p id="loopDemo"></p>
+                <button onclick="let result=''; for(let i=0;i<5;i++) result+=i+' '; document.getElementById('loopDemo').innerHTML='For loop: '+result">Run For Loop</button>
+                <button onclick="let arr=['red','green','blue']; let result=''; for(let color of arr) result+=color+' '; document.getElementById('loopDemo').innerHTML='For-of: '+result">Run For-of</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== FUNCTIONS ==================== -->
+    <div id="functions" class="content-box">
+        <h2>📦 FUNCTIONS</h2>
+
+        <div id="function" class="main">
+            <div class="js-badge">function | arrow | async | await | generator</div>
+            <h3>Function Types</h3>
+            <pre>// Regular Function
+function add(a, b) {
+    return a + b;
+}
+
+// Arrow Function
+const subtract = (a, b) => a - b;
+
+// Arrow Function with block
+const divide = (a, b) => {
+    if (b === 0) return "Error";
+    return a / b;
+};
+
+// Immediately Invoked Function Expression (IIFE)
+(function() {
+    console.log("Runs immediately!");
+})();
+
+// Default Parameters
+function greet(name = "Guest") {
+    return "Hello " + name;
+}
+
+// Rest Parameters
+function sumAll(...numbers) {
+    return numbers.reduce((a,b) => a + b, 0);
+}</pre>
+            <div class="output-box">
+                <p><strong>Output:</strong></p>
+                <p id="functionDemo"></p>
+                <button onclick="let add=(a,b)=>a+b; document.getElementById('functionDemo').innerHTML='Arrow Function: 10 + 5 = '+add(10,5)">Run Arrow Function</button>
+                <button onclick="function sumAll(...nums){return nums.reduce((a,b)=>a+b,0)}; document.getElementById('functionDemo').innerHTML='Rest Params: 1+2+3+4+5 = '+sumAll(1,2,3,4,5)">Run Rest Params</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== ARRAY METHODS ==================== -->
+    <div id="arrays" class="content-box">
+        <h2>📊 ARRAY METHODS (35+)</h2>
+
+        <div id="push" class="main">
+            <div class="js-badge">push | pop | shift | unshift</div>
+            <h3>Array Modification Methods</h3>
+            <pre>let arr = [1, 2, 3];
+
+arr.push(4);     // [1, 2, 3, 4] - add to end
+arr.pop();       // [1, 2, 3] - remove from end
+arr.unshift(0);  // [0, 1, 2, 3] - add to beginning
+arr.shift();     // [1, 2, 3] - remove from beginning</pre>
+            <div class="output-box">
+                <p id="arrayBasicDemo">[1, 2, 3]</p>
+                <button onclick="let arr=[1,2,3]; arr.push(4); document.getElementById('arrayBasicDemo').innerHTML='push(4): ['+arr+']'">Push</button>
+                <button onclick="let arr=[1,2,3]; arr.pop(); document.getElementById('arrayBasicDemo').innerHTML='pop(): ['+arr+']'">Pop</button>
+            </div>
+        </div>
+
+        <div id="map" class="main1">
+            <div class="js-badge">map | filter | reduce | forEach</div>
+            <h3>Array Iteration Methods</h3>
+            <pre>let numbers = [1, 2, 3, 4, 5];
+
+// map - transform each element
+let doubled = numbers.map(n => n * 2);  // [2, 4, 6, 8, 10]
+
+// filter - keep elements that pass test
+let evens = numbers.filter(n => n % 2 === 0);  // [2, 4]
+
+// reduce - accumulate values
+let sum = numbers.reduce((acc, curr) => acc + curr, 0);  // 15
+
+// forEach - execute for each element
+numbers.forEach(n => console.log(n));
+
+// find - find first matching element
+let found = numbers.find(n => n > 3);  // 4
+
+// some - check if ANY element passes
+let hasEven = numbers.some(n => n % 2 === 0);  // true
+
+// includes - check if value exists
+let hasThree = numbers.includes(3);  // true</pre>
+            <div class="output-box">
+                <p id="arrayMethodDemo">[1, 2, 3, 4, 5]</p>
+                <button onclick="let arr=[1,2,3,4,5]; let doubled=arr.map(n=>n*2); document.getElementById('arrayMethodDemo').innerHTML='map(x2): ['+doubled+']'">Map</button>
+                <button onclick="let arr=[1,2,3,4,5]; let evens=arr.filter(n=>n%2===0); document.getElementById('arrayMethodDemo').innerHTML='filter(even): ['+evens+']'">Filter</button>
+                <button onclick="let arr=[1,2,3,4,5]; let sum=arr.reduce((a,b)=>a+b,0); document.getElementById('arrayMethodDemo').innerHTML='reduce(sum): '+sum">Reduce</button>
+            </div>
+        </div>
+
+        <div id="slice" class="main2">
+            <div class="js-badge">slice | splice | concat | join | sort</div>
+            <h3>Array Utility Methods</h3>
+            <pre>let arr = [1, 2, 3, 4, 5];
+
+// slice - create sub-array
+let sliced = arr.slice(1, 4);  // [2, 3, 4]
+
+// concat - merge arrays
+let merged = arr.concat([6, 7, 8]);
+
+// join - convert to string
+let str = arr.join("-");  // "1-2-3-4-5"
+
+// sort - sort elements
+let unsorted = [3, 1, 4, 2];
+unsorted.sort();  // [1, 2, 3, 4]</pre>
+            <div class="output-box">
+                <p id="arrayUtilDemo">[1, 2, 3, 4, 5]</p>
+                <button onclick="let arr=[1,2,3,4,5]; let sliced=arr.slice(1,4); document.getElementById('arrayUtilDemo').innerHTML='slice(1,4): ['+sliced+']'">Slice</button>
+                <button onclick="let arr=[3,1,4,2]; arr.sort(); document.getElementById('arrayUtilDemo').innerHTML='sort(): ['+arr+']'">Sort</button>
+                <button onclick="let arr=[1,2,3,4,5]; let joined=arr.join('-'); document.getElementById('arrayUtilDemo').innerHTML='join("-"): '+joined">Join</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== STRING METHODS ==================== -->
+    <div id="strings" class="content-box">
+        <h2>📝 STRING METHODS (30+)</h2>
+
+        <div id="length" class="main">
+            <div class="js-badge">length | toUpperCase | toLowerCase</div>
+            <h3>String Properties & Basic Methods</h3>
+            <pre>let str = "Hello World";
+
+str.length;              // 11
+str.toUpperCase();       // "HELLO WORLD"
+str.toLowerCase();       // "hello world"
+str.charAt(0);           // "H"
+str.indexOf("World");    // 6
+str.includes("Hello");   // true
+str.startsWith("He");    // true
+str.endsWith("ld");      // true</pre>
+            <div class="output-box">
+                <p id="stringDemo">"Hello World"</p>
+                <button onclick="let str = 'Hello World'; document.getElementById('stringDemo').innerHTML='toUpperCase(): '+str.toUpperCase()">Upper</button>
+                <button onclick="let str='Hello World'; document.getElementById('stringDemo').innerHTML='length: '+str.length">Length</button>
+                <button onclick="let str='Hello World'; document.getElementById('stringDemo').innerHTML='includes("World"): '+str.includes('World')">Includes</button>
+            </div>
+        </div>
+
+        <div id="replace" class="main1">
+            <div class="js-badge">slice | replace | split | trim</div>
+            <h3>String Manipulation Methods</h3>
+            <pre>let str = "JavaScript is awesome";
+
+str.slice(0, 10);        // "JavaScript"
+str.replace("awesome", "great");  // "JavaScript is great"
+str.split(" ");          // ["JavaScript", "is", "awesome"]
+str.trim();              // removes whitespace</pre>
+            <div class="output-box">
+                <p id="stringManipDemo">"JavaScript is awesome"</p>
+                <button onclick="let str='JavaScript is awesome'; document.getElementById('stringManipDemo').innerHTML='slice(0,10): '+str.slice(0,10)">Slice</button>
+                <button onclick="let str='JavaScript is awesome'; document.getElementById('stringManipDemo').innerHTML='split(): '+str.split(' ')">Split</button>
+                <button onclick="let str='JavaScript is awesome'; document.getElementById('stringManipDemo').innerHTML='replace(awesome,great): '+str.replace('awesome','great')">Replace</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== NUMBERS & MATH ==================== -->
+    <div id="numbers" class="content-box">
+        <h2>🔢 NUMBERS & MATH METHODS (20+)</h2>
+
+        <div id="parseint" class="main">
+            <div class="js-badge">parseInt | parseFloat | toFixed</div>
+            <h3>Number Methods</h3>
+            <pre>let num = 123.456;
+
+num.toFixed(2);      // "123.46"
+parseInt("123px");   // 123
+parseFloat("123.45"); // 123.45
+isNaN("hello");      // true
+Number.isInteger(5); // true</pre>
+            <div class="output-box">
+                <p id="numberDemo">123.456</p>
+                <button onclick="let num=123.456; document.getElementById('numberDemo').innerHTML='toFixed(2): '+num.toFixed(2)">toFixed</button>
+                <button onclick="document.getElementById('numberDemo').innerHTML='parseInt(123px): '+parseInt('123px')">parseInt</button>
+            </div>
+        </div>
+
+        <div id="math-random" class="main1">
+            <div class="js-badge">Math.random | Math.round | Math.floor | Math.max</div>
+            <h3>Math Object Methods</h3>
+            <pre>Math.PI;              // 3.14159...
+Math.round(4.7);      // 5
+Math.floor(4.7);      // 4
+Math.ceil(4.1);       // 5
+Math.abs(-5);         // 5
+Math.sqrt(16);        // 4
+Math.pow(2, 3);       // 8
+Math.min(1, 3, 5);    // 1
+Math.max(1, 3, 5);    // 5
+Math.random();        // 0 to 0.999...</pre>
+            <div class="output-box">
+                <p id="mathDemo"></p>
+                <button onclick="document.getElementById('mathDemo').innerHTML='Math.random(): '+Math.random()">Random</button>
+                <button onclick="document.getElementById('mathDemo').innerHTML='Math.round(4.7): '+Math.round(4.7)">Round</button>
+                <button onclick="document.getElementById('mathDemo').innerHTML='Math.max(1,5,3): '+Math.max(1,5,3)">Max</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== OBJECTS ==================== -->
+    <div id="objects" class="content-box">
+        <h2>🎯 OBJECTS & OBJECT METHODS (25+)</h2>
+
+        <div id="keys" class="main">
+            <div class="js-badge">Object.keys | Object.values | Object.entries</div>
+            <h3>Object Methods</h3>
+            <pre>let person = {
+    name: "John",
+    age: 30,
+    city: "New York"
+};
+
+// Access properties
+person.name;           // "John"
+
+// Object methods
+Object.keys(person);    // ["name", "age", "city"]
+Object.values(person);  // ["John", 30, "New York"]
+Object.entries(person); // [["name","John"],["age",30],...]</pre>
+            <div class="output-box">
+                <p id="objectDemo"></p>
+                <button onclick="let person={name:'John',age:30}; document.getElementById('objectDemo').innerHTML='Object.keys(): '+Object.keys(person)">Keys</button>
+                <button onclick="let person={name:'John',age:30}; document.getElementById('objectDemo').innerHTML='Object.values(): '+Object.values(person)">Values</button>
+            </div>
+        </div>
+
+        <div id="json" class="main1">
+            <div class="js-badge">JSON.stringify | JSON.parse</div>
+            <h3>JSON (JavaScript Object Notation)</h3>
+            <pre>// Convert Object to JSON string
+let person = { name: "John", age: 30 };
+let jsonString = JSON.stringify(person);
+// '{"name":"John","age":30}'
+
+// Convert JSON string to Object
+let jsonData = '{"name":"Jane","age":25}';
+let obj = JSON.parse(jsonData);
+// {name: "Jane", age: 25}</pre>
+            <div class="output-box">
+                <p id="jsonDemo"></p>
+                <button onclick="let obj={name:'John',age:30}; document.getElementById('jsonDemo').innerHTML='JSON.stringify(): '+JSON.stringify(obj)">Stringify</button>
+                <button onclick="let str='{\"name\":\"Jane\",\"age\":25}'; let obj=JSON.parse(str); document.getElementById('jsonDemo').innerHTML='JSON.parse().name: '+obj.name">Parse</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== DATE & TIME ==================== -->
+    <div id="date" class="content-box">
+        <h2>⏰ DATE & TIME METHODS (20+)</h2>
+
+        <div id="new-date" class="main">
+            <div class="js-badge">new Date | getFullYear | getMonth | getDate</div>
+            <h3>Date Object Methods</h3>
+            <pre>// Create Date objects
+let now = new Date();                    // current date/time
+
+// Get methods
+let year = now.getFullYear();     // 2024
+let month = now.getMonth();       // 0-11 (0=January)
+let date = now.getDate();         // 1-31
+let hours = now.getHours();       // 0-23
+let minutes = now.getMinutes();   // 0-59
+
+// Format methods
+now.toDateString();   // "Mon Dec 25 2024"
+now.toLocaleDateString(); // "12/25/2024"
+now.toLocaleTimeString(); // "2:30:00 PM"</pre>
+            <div class="output-box">
+                <p id="dateDemo"></p>
+                <button onclick="let now=new Date(); document.getElementById('dateDemo').innerHTML='Current Date: '+now.toDateString()">Show Date</button>
+                <button onclick="let now=new Date(); document.getElementById('dateDemo').innerHTML='Current Time: '+now.toLocaleTimeString()">Show Time</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== DOM MANIPULATION ==================== -->
+    <div id="dom" class="content-box">
+        <h2>🎨 DOM MANIPULATION (50+ Methods)</h2>
+
+        <div id="getelementbyid" class="main">
+            <div class="js-badge">getElementById | querySelector</div>
+            <h3>Selecting Elements</h3>
+            <pre>// Single element selection
+document.getElementById("myId");
+document.querySelector(".myClass");
+document.querySelector("#myId");
+
+// Multiple element selection
+document.getElementsByClassName("myClass");
+document.getElementsByTagName("div");
+document.querySelectorAll(".myClass");</pre>
+            <div class="output-box">
+                <p id="demoPara">This is a demo paragraph</p>
+                <button onclick="document.getElementById('demoPara').style.color='red'">Change Color</button>
+                <button onclick="document.getElementById('demoPara').innerHTML='Text Changed!'">Change Text</button>
+            </div>
+        </div>
+
+        <div id="addeventlistener" class="main1">
+            <div class="js-badge">createElement | appendChild | innerHTML</div>
+            <h3>Creating & Modifying Elements</h3>
+            <pre>// Create new element
+let newDiv = document.createElement("div");
+newDiv.textContent = "I'm new!";
+newDiv.className = "my-class";
+
+// Add to page
+document.body.appendChild(newDiv);
+
+// Modify content
+element.innerHTML = "&lt;strong&gt;HTML content&lt;/strong&gt;";
+element.style.color = "blue";
+
+// Add/remove classes
+element.classList.add("active");
+element.classList.remove("hidden");</pre>
+            <div class="output-box">
+                <div id="container"></div>
+                <button onclick="let newDiv=document.createElement('div'); newDiv.textContent='New Element Created!'; newDiv.style.background='#facc15'; newDiv.style.padding='10px'; newDiv.style.margin='10px'; newDiv.style.borderRadius='5px'; document.getElementById('container').appendChild(newDiv)">Create Element</button>
+                <button onclick="document.getElementById('container').innerHTML=''">Clear All</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== EVENTS ==================== -->
+    <div id="events" class="content-box">
+        <h2>🖱️ EVENT HANDLERS (40+ Events)</h2>
+
+        <div id="click" class="main">
+            <div class="js-badge">click | mouseover | mouseout | dblclick</div>
+            <h3>Mouse Events</h3>
+            <pre>// Mouse Event Types
+click       // Single click
+dblclick    // Double click
+mouseover   // Mouse enters element
+mouseout    // Mouse leaves element
+contextmenu // Right-click
+
+// Usage
+element.onclick = function() { ... };
+element.addEventListener("click", myFunction);</pre>
+            <div class="output-box">
+                <div style="inline-size:200px; block-size:100px; background:#facc15; display:flex; align-items:center; justify-content:center; border-radius:10px; margin:10px auto; cursor:pointer;" id="mouseBox">
+                    Hover or Click me
+                </div>
+                <p id="mouseOutput"></p>
+                <script>
+                    var box = document.getElementById("mouseBox");
+                    var output = document.getElementById("mouseOutput");
+                    if(box) {
+                        box.onclick = function() { output.innerHTML = "Click event triggered!"; };
+                        box.onmouseover = function() { output.innerHTML = "Mouse entered!"; };
+                        box.onmouseout = function() { output.innerHTML = "Mouse left!"; };
+                        box.ondblclick = function() { output.innerHTML = "Double click!"; };
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div id="keydown" class="main1">
+            <div class="js-badge">keydown | keyup | input | change</div>
+            <h3>Keyboard & Form Events</h3>
+            <pre>// Keyboard Events
+keydown     // Key pressed
+keyup       // Key released
+
+// Form Events
+change      // Input value changed
+input       // Input value changing
+focus       // Element focused
+blur        // Element lost focus</pre>
+            <div class="output-box">
+                <input type="text" id="keyInput" placeholder="Type something..." style="padding:8px; margin:10px; inline-size:200px;">
+                <p id="keyOutput"></p>
+                <script>
+                    var inputField = document.getElementById("keyInput");
+                    var keyOut = document.getElementById("keyOutput");
+                    if(inputField) {
+                        inputField.onkeydown = function() { keyOut.innerHTML = "Key pressed!"; };
+                        inputField.onkeyup = function() { keyOut.innerHTML = "Key released!"; };
+                        inputField.oninput = function(e) { keyOut.innerHTML = "Value: " + e.target.value; };
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== STORAGE & WINDOW ==================== -->
+    <div id="storage" class="content-box">
+        <h2>💾 STORAGE & WINDOW METHODS (20+)</h2>
+
+        <div id="localstorage" class="main">
+            <div class="js-badge">localStorage | sessionStorage</div>
+            <h3>Web Storage</h3>
+            <pre>// localStorage (persists until deleted)
+localStorage.setItem("key", "value");
+let data = localStorage.getItem("key");
+localStorage.removeItem("key");
+localStorage.clear();
+
+// sessionStorage (clears when tab closed)
+sessionStorage.setItem("temp", "data");
+let temp = sessionStorage.getItem("temp");</pre>
+            <div class="output-box">
+                <p id="storageDemo"></p>
+                <button onclick="localStorage.setItem('test','Hello World'); document.getElementById('storageDemo').innerHTML='Saved: '+localStorage.getItem('test')">Save to Storage</button>
+                <button onclick="document.getElementById('storageDemo').innerHTML='Retrieved: '+localStorage.getItem('test')">Retrieve</button>
+                <button onclick="localStorage.removeItem('test'); document.getElementById('storageDemo').innerHTML='Item removed'">Remove</button>
+            </div>
+        </div>
+
+        <div id="alert" class="main1">
+            <div class="js-badge">alert | confirm | prompt | print</div>
+            <h3>Window Dialog & Methods</h3>
+            <pre>// Dialog boxes
+alert("Message");           // Simple alert
+confirm("Are you sure?");   // Returns true/false
+prompt("Enter name:");      // Returns input value
+
+// Window methods
+window.print();             // Print page
+window.scrollTo(0, 0);      // Scroll to top
+
+// Window properties
+window.innerWidth           // Viewport width
+window.innerHeight          // Viewport height
+window.location.href        // Current URL
+window.location.reload()    // Reload page</pre>
+            <div class="output-box">
+                <button onclick="alert('Hello from JavaScript!')">Alert</button>
+                <button onclick="confirm('Click OK or Cancel')">Confirm</button>
+                <button onclick="prompt('Enter your name:')">Prompt</button>
+                <button onclick="window.print()">Print</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== ADVANCED JAVASCRIPT ==================== -->
+    <div id="advanced" class="content-box">
+        <h2>⚡ ADVANCED JAVASCRIPT (30+ Concepts)</h2>
+
+        <div id="promise" class="main">
+            <div class="js-badge">Promise | then | catch</div>
+            <h3>Promises</h3>
+            <pre>// Creating a Promise
+let myPromise = new Promise((resolve, reject) => {
+    let success = true;
+    if (success) {
+        resolve("Operation successful!");
+    } else {
+        reject("Operation failed!");
+    }
+});
+
+// Using Promise
+myPromise
+    .then(result => console.log(result))
+    .catch(error => console.log(error));</pre>
+            <div class="output-box">
+                <p id="promiseDemo"></p>
+                <button onclick="let p=new Promise((resolve)=>setTimeout(()=>resolve('Promise resolved after 1 sec!'),1000)); p.then(r=>document.getElementById('promiseDemo').innerHTML=r)">Run Promise</button>
+            </div>
+        </div>
+
+        <div id="async-await" class="main1">
+            <div class="js-badge">async | await</div>
+            <h3>Async/Await</h3>
+            <pre>// Async function
+async function getData() {
+    try {
+        let response = await fetch('https://api.example.com/data');
+        let data = await response.json();
+        console.log(data);
+    } catch(error) {
+        console.error(error);
+    }
+}</pre>
+            <div class="output-box">
+                <p id="asyncDemo"></p>
+                <button onclick="async function demo(){ await new Promise(r=>setTimeout(r,1000)); document.getElementById('asyncDemo').innerHTML='Async/Await completed!';} demo()">Run Async/Await</button>
+            </div>
+        </div>
+
+        <div id="class" class="main2">
+            <div class="js-badge">class | constructor | extends | super</div>
+            <h3>Classes (OOP)</h3>
+            <pre>// Class definition
+class Animal {
+    constructor(name) {
+        this.name = name;
+    }
+    
+    speak() {
+        return this.name + " makes a sound";
+    }
+}
+
+// Inheritance
+class Dog extends Animal {
+    constructor(name, breed) {
+        super(name);
+        this.breed = breed;
+    }
+    
+    speak() {
+        return this.name + " barks!";
+    }
+}</pre>
+            <div class="output-box">
+                <p id="classDemo"></p>
+                <button onclick="class Animal{constructor(name){this.name=name} speak(){return this.name+' makes sound'}} class Dog extends Animal{speak(){return this.name+' barks!'}} let dog=new Dog('Rex'); document.getElementById('classDemo').innerHTML=dog.speak()">Run Class</button>
+            </div>
+        </div>
+
+        <div id="fetch" class="main">
+            <div class="js-badge">try | catch | throw | finally</div>
+            <h3>Error Handling</h3>
+            <pre>try {
+    // Code that might throw error
+    let result = riskyOperation();
+} catch (error) {
+    // Handle error
+    console.log(error.message);
+} finally {
+    // Always executes
+    console.log("Cleanup");
+}
+
+// Throwing custom errors
+throw new Error("Something went wrong!");</pre>
+            <div class="output-box">
+                <p id="errorDemo"></p>
+                <button onclick="try{throw new Error('Custom error!')}catch(e){document.getElementById('errorDemo').innerHTML='Caught: '+e.message}">Throw Error</button>
+            </div>
+        </div>
+
+        <div id="settimeout" class="main1">
+            <div class="js-badge">setTimeout | setInterval | clearInterval</div>
+            <h3>Timing Functions</h3>
+            <pre>// Execute after delay (milliseconds)
+let timeoutId = setTimeout(() => {
+    console.log("Runs after 2 seconds");
+}, 2000);
+
+// Execute repeatedly
+let intervalId = setInterval(() => {
+    console.log("Runs every second");
+}, 1000);
+
+// Clear timers
+clearTimeout(timeoutId);
+clearInterval(intervalId);</pre>
+            <div class="output-box">
+                <p id="timerDemo"></p>
+                <button onclick="let count=0; let interval=setInterval(()=>{count++; document.getElementById('timerDemo').innerHTML='Counter: '+count; if(count>=5) clearInterval(interval);},1000)">Start Timer</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== ERROR TYPES ==================== -->
+    <div id="error-types" class="content-box">
+        <h2>⚠️ JAVASCRIPT ERROR TYPES (8)</h2>
+
+        <div id="error" class="main">
+            <div class="js-badge">Error Types</div>
+            <h3>Built-in Error Constructors</h3>
+            <pre>// All error types
+Error           // Generic error
+SyntaxError     // Invalid syntax
+ReferenceError  // Variable not defined
+TypeError       // Value not expected type
+RangeError      // Value out of range
+URIError        // Invalid URI function
+EvalError       // Error in eval()
+AggregateError  // Multiple errors</pre>
+            <div class="output-box">
+                <p id="errorTypeDemo"></p>
+                <button onclick="try{ throw new TypeError('Type error example') }catch(e){ document.getElementById('errorTypeDemo').innerHTML='Caught: '+e.name+' - '+e.message }">Throw TypeError</button>
+                <button onclick="try{ throw new RangeError('Range error example') }catch(e){ document.getElementById('errorTypeDemo').innerHTML='Caught: '+e.name+' - '+e.message }">Throw RangeError</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== COMPLETE SUMMARY ==================== -->
+    <div id="summary" class="content-box">
+        <h2>📊 COMPLETE JAVASCRIPT SUMMARY</h2>
+
+        <div class="yellow-box">
+            <h3>Total JavaScript Elements Covered:</h3>
+            <pre>
+┌─────────────────────────────────────────────┬────────┐
+│ Category                                    │ Count  │
+├─────────────────────────────────────────────┼────────┤
+│ Variables & Data Types (var, let, const)    │   8    │
+│ Operators (arithmetic, comparison, logical) │  50+   │
+│ Conditionals (if, else, switch, ternary)    │   5    │
+│ Loops (for, while, do-while, for-in, for-of)│   6    │
+│ Functions (regular, arrow, async, generator)│  12    │
+│ Array Methods                               │  30+   │
+│ String Methods                              │  25+   │
+│ Number & Math Methods                       │  20+   │
+│ Object Methods & JSON                       │  20+   │
+│ Date Methods                                │  15+   │
+│ DOM Manipulation Methods                    │  40+   │
+│ Event Types                                 │  30+   │
+│ Storage & Window Methods                    │  15+   │
+│ Advanced Concepts                           │  25+   │
+│ Error Types                                 │   8    │
+├─────────────────────────────────────────────┼────────┤
+│ TOTAL ELEMENTS                              │ 350+   │
+└─────────────────────────────────────────────┴────────┘</pre>
+        </div>
+    </div>
+
+</div>
+<footer>
+    <p><strong>© 2026 Code in One. All rights reserved.</strong></p>
+</footer>
+
+</body>
+</html>

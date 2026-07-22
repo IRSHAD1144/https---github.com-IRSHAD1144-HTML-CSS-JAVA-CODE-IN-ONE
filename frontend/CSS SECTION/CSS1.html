@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS elements | Code One</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+<header>
+     <img src="logo.png" alt="Logo" class="logo" onerror="this.src='logo.png'; this.onerror=null;"><br>
+    <div class="nav-right">
+        <button class="home-btn" onclick="window.location.href='html1.html'">NEXT 2</button>
+        <button class="home-btn" onclick="window.location.href='html2.html'">NEXT 3</button>
+        <button class="home-btn" onclick="window.location.href='oldhtml.html'">old tags</button>
+    </div>
+</header>
+
+<div class="nav">
+    <a href="Main.html" class="home-btn"> Home</a>
+    <h2>CSS ELEMENTS</h2>
+</div>
+
+<div class="sidebar">
+    <div class="he he-title">FLEXBOX &amp; GRID (16)</div>
+    <div class="he1" onclick="scrollToSection('align-content')">align-content</div>
+    <div class="he1" onclick="scrollToSection('align-items')">align-items</div>
+    <div class="he1" onclick="scrollToSection('align-self')">align-self</div>
+    <div class="he1" onclick="scrollToSection('flex')">flex</div>
+    <div class="he1" onclick="scrollToSection('flex-basis')">flex-basis</div>
+    <div class="he1" onclick="scrollToSection('flex-direction')">flex-direction</div>
+    <div class="he1" onclick="scrollToSection('flex-flow')">flex-flow</div>
+    <div class="he1" onclick="scrollToSection('flex-grow')">flex-grow</div>
+    <div class="he1" onclick="scrollToSection('flex-shrink')">flex-shrink</div>
+    <div class="he1" onclick="scrollToSection('flex-wrap')">flex-wrap</div>
+    <div class="he1" onclick="scrollToSection('gap')">gap</div>
+    <div class="he1" onclick="scrollToSection('grid')">grid</div>
+    <div class="he1" onclick="scrollToSection('grid-area')">grid-area</div>
+    <div class="he1" onclick="scrollToSection('grid-template')">grid-template</div>
+    <div class="he1" onclick="scrollToSection('justify-content')">justify-content</div>
+    <div class="he1" onclick="scrollToSection('order')">order</div>
+
+    <div class="he he-title">🎬 ANIMATIONS (10)</div>
+    <div class="he1" onclick="scrollToSection('animation')">animation</div>
+    <div class="he1" onclick="scrollToSection('animation-delay')">animation-delay</div>
+    <div class="he1" onclick="scrollToSection('animation-direction')">animation-direction</div>
+    <div class="he1" onclick="scrollToSection('animation-duration')">animation-duration</div>
+    <div class="he1" onclick="scrollToSection('animation-fill-mode')">animation-fill-mode</div>
+    <div class="he1" onclick="scrollToSection('animation-iteration-count')">animation-iteration-count</div>
+    <div class="he1" onclick="scrollToSection('animation-name')">animation-name</div>
+    <div class="he1" onclick="scrollToSection('animation-play-state')">animation-play-state</div>
+    <div class="he1" onclick="scrollToSection('animation-timing-function')">animation-timing-function</div>
+
+    <div class="he he-title">🎨 BACKGROUND (9)</div>
+    <div class="he1" onclick="scrollToSection('background')">background</div>
+    <div class="he1" onclick="scrollToSection('background-attachment')">background-attachment</div>
+    <div class="he1" onclick="scrollToSection('background-blend-mode')">background-blend-mode</div>
+    <div class="he1" onclick="scrollToSection('background-clip')">background-clip</div>
+    <div class="he1" onclick="scrollToSection('background-color')">background-color</div>
+    <div class="he1" onclick="scrollToSection('background-image')">background-image</div>
+    <div class="he1" onclick="scrollToSection('background-position')">background-position</div>
+    <div class="he1" onclick="scrollToSection('background-repeat')">background-repeat</div>
+    <div class="he1" onclick="scrollToSection('background-size')">background-size</div>
+
+   
+    
+</div>
+<div class="main-section">
+
+    <!-- ==================== FLEXBOX & GRID SECTION ==================== -->
+    <div id="flex" class="content-box">
+        <h2>📐 FLEXBOX & GRID PROPERTIES</h2>
+
+        <!-- align-content -->
+        <div id="align-content" class="main">
+            <div class="prop-badge">align-content</div>
+            <h3>Aligns flex lines when there's extra space</h3>
+            <pre>.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center; /* space-between | space-around | stretch | flex-start | flex-end */
+    block-size: 200px;
+}</pre>
+            <div class="demo-box">
+                <div style="display: flex; flex-wrap: wrap; align-content: center; block-size: 150px; background: #e5e7eb;">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+                <p><small>Items centered vertically within container</small></p>
+            </div>
+        </div>
+
+        <!-- align-items -->
+        <div id="align-items" class="main1">
+            <div class="prop-badge">align-items</div>
+            <h3>Aligns flex items vertically</h3>
+            <pre>.container {
+    display: flex;
+    align-items: center; /* flex-start | flex-end | stretch | baseline */
+    block-size: 150px;
+}</pre>
+            <div class="demo-box">
+                <div style="display: flex; align-items: center; block-size: 150px; background: #e5e7eb;">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item" style="block-size: 60px;">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+                <p><small>All items vertically centered</small></p>
+            </div>
+        </div>
+
+        <!-- align-self -->
+        <div id="align-self" class="main2">
+            <div class="prop-badge">align-self</div>
+            <h3>Aligns a single flex item differently</h3>
+            <pre>.item {
+    align-self: flex-end; /* center | flex-start | stretch | baseline */
+}</pre>
+            <div class="demo-box">
+                <div style="display: flex; block-size: 150px; background: #e5e7eb;">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item" style="align-self: flex-end;">Item 2 (flex-end)</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+                <p><small>Second item aligned to bottom</small></p>
+            </div>
+        </div>
+
+        <!-- flex container -->
+        <div id="flex" class="main">
+            <div class="prop-badge">flex | flex-direction | flex-wrap | flex-flow</div>
+            <h3>Flexbox Container Properties</h3>
+            <pre>.container {
+    display: flex;
+    flex-direction: row; /* row-reverse | column | column-reverse */
+    flex-wrap: wrap; /* nowrap | wrap-reverse */
+    flex-flow: row wrap; /* shorthand for direction + wrap */
+}</pre>
+            <div class="demo-box">
+                <div style="display: flex; flex-direction: row; flex-wrap: wrap; gap: 10px; background: #e5e7eb; padding: 10px;">
+                    <div class="demo-item">1</div>
+                    <div class="demo-item">2</div>
+                    <div class="demo-item">3</div>
+                    <div class="demo-item">4</div>
+                </div>
+                <p><small>flex-direction: row | flex-wrap: wrap</small></p>
+            </div>
+        </div>
+
+        <!-- flex-grow, flex-shrink, flex-basis -->
+        <div id="flex-grow" class="main1">
+            <div class="prop-badge">flex-grow | flex-shrink | flex-basis</div>
+            <h3>Flex Item Sizing</h3>
+            <pre>.item1 { flex-grow: 1; }  /* Takes more space */
+.item2 { flex-shrink: 2; } /* Shrinks more */
+.item3 { flex-basis: 100px; } /* Starting size */</pre>
+            <div class="demo-box">
+                <div style="display: flex; background: #e5e7eb; padding: 10px;">
+                    <div class="demo-item" style="flex-grow: 1;">grow:1</div>
+                    <div class="demo-item" style="flex-grow: 2;">grow:2</div>
+                    <div class="demo-item" style="flex-grow: 1;">grow:1</div>
+                </div>
+                <p><small>Second item takes twice the space</small></p>
+            </div>
+        </div>
+
+        <!-- justify-content -->
+        <div id="justify-content" class="main2">
+            <div class="prop-badge">justify-content</div>
+            <h3>Aligns flex items horizontally</h3>
+            <pre>.container {
+    display: flex;
+    justify-content: center; /* space-between | space-around | flex-start | flex-end | space-evenly */
+}</pre>
+            <div class="demo-box">
+                <div style="display: flex; justify-content: center; gap: 10px; background: #e5e7eb; padding: 10px;">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+                <p><small>justify-content: center</small></p>
+            </div>
+        </div>
+
+        <!-- gap -->
+        <div id="gap" class="main">
+            <div class="prop-badge">gap</div>
+            <h3>Gap between flex/grid items</h3>
+            <pre>.container {
+    display: flex;
+    gap: 20px; /* row-gap column-gap */
+}</pre>
+            <div class="demo-box">
+                <div style="display: flex; gap: 20px; background: #e5e7eb; padding: 10px;">
+                    <div class="demo-item">Item 1</div>
+                    <div class="demo-item">Item 2</div>
+                    <div class="demo-item">Item 3</div>
+                </div>
+                <p><small>20px gap between items</small></p>
+            </div>
+        </div>
+
+        <!-- grid -->
+        <div id="grid" class="main1">
+            <div class="prop-badge">grid | grid-template-columns | grid-template-rows | grid-area</div>
+            <h3>CSS Grid Properties</h3>
+            <pre>.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+    grid-template-rows: auto;
+    gap: 10px;
+}
+.item1 { grid-area: 1 / 1 / 3 / 2; } /* row-start / col-start / row-end / col-end */</pre>
+            <div class="demo-box">
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; background: #e5e7eb; padding: 10px;">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                    <div class="grid-item">5</div>
+                    <div class="grid-item">6</div>
+                </div>
+                <p><small>3-column grid layout</small></p>
+            </div>
+        </div>
+
+        <!-- order -->
+        <div id="order" class="main2">
+            <div class="prop-badge">order</div>
+            <h3>Changes order of flex/grid items</h3>
+            <pre>.item1 { order: 3; }
+.item2 { order: 1; }
+.item3 { order: 2; }</pre>
+            <div class="demo-box">
+                <div style="display: flex; background: #e5e7eb; padding: 10px;">
+                    <div class="demo-item" style="order: 3;">3rd (order:3)</div>
+                    <div class="demo-item" style="order: 1;">1st (order:1)</div>
+                    <div class="demo-item" style="order: 2;">2nd (order:2)</div>
+                </div>
+                <p><small>Items reordered by 'order' property</small></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== ANIMATION SECTION ==================== -->
+    <div id="animation" class="content-box">
+        <h2>🎬 ANIMATION PROPERTIES</h2>
+
+        <div id="animation" class="main">
+            <div class="prop-badge">animation (shorthand)</div>
+            <h3>All animation properties in one</h3>
+            <pre>.element {
+    animation: myAnimation 2s ease-in-out 0.5s infinite alternate;
+}</pre>
+            <div class="demo-box">
+                <div class="animation-demo animated"></div>
+                <p><small>Animating box (slide effect)</small></p>
+            </div>
+        </div>
+
+        <div id="animation-name" class="main1">
+            <div class="prop-badge">animation-name | animation-duration | animation-timing-function</div>
+            <h3>Animation Name, Duration & Timing</h3>
+            <pre>@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100px); }
+}
+.element {
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}</pre>
+            <div class="demo-box">
+                <div style="inline-size: 80px; block-size: 80px; background: #f87171; border-radius: 10px; animation: demoSlide 2s ease-in-out infinite;"></div>
+                <p><small>2-second smooth slide animation</small></p>
+            </div>
+        </div>
+
+        <div id="animation-delay" class="main2">
+            <div class="prop-badge">animation-delay | animation-iteration-count | animation-direction</div>
+            <h3>Delay, Repeat Count & Direction</h3>
+            <pre>.element {
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}</pre>
+            <div class="demo-box">
+                <div style="inline-size: 80px; block-size: 80px; background: #facc15; border-radius: 10px; animation: demoSlide 1s ease-in-out 0s 3 alternate;"></div>
+                <p><small>Plays 3 times, alternates direction</small></p>
+            </div>
+        </div>
+
+        <div id="animation-fill-mode" class="main">
+            <div class="prop-badge">animation-fill-mode | animation-play-state</div>
+            <h3>Fill Mode & Play State</h3>
+            <pre>.element {
+    animation-fill-mode: forwards; /* keeps end state */
+    animation-play-state: paused; /* or running */
+}</pre>
+            <div class="demo-box">
+                <div style="inline-size: 80px; block-size: 80px; background: #34d399; border-radius: 10px; animation: demoSlide 2s ease forwards; animation-play-state: running;"></div>
+                <p><small>Forwards keeps final position | Play-state controls running/paused</small></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== BACKGROUND SECTION ==================== -->
+    <div id="background" class="content-box">
+        <h2>🎨 BACKGROUND PROPERTIES</h2>
+
+        <div id="background-color" class="main">
+            <div class="prop-badge">background-color | background-image</div>
+            <h3>Background Color and Image</h3>
+            <pre>.element {
+    background-color: #34d399;
+    background-image: url('image.jpg');
+}</pre>
+            <div class="demo-box">
+                <div style="background-color: #34d399; padding: 20px; border-radius: 10px; color: white;">Solid green background</div>
+                <div style="background-image: linear-gradient(135deg, #f87171, #facc15); padding: 20px; border-radius: 10px; margin-block-start: 10px; color: white;">Gradient background</div>
+            </div>
+        </div>
+
+        <div id="background-position" class="main1">
+            <div class="prop-badge">background-position | background-repeat | background-size</div>
+            <h3>Position, Repeat and Size</h3>
+            <pre>.element {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}</pre>
+            <div class="demo-box">
+                <div style="background-image: linear-gradient(45deg, #f87171, #34d399); background-position: center; background-size: cover; padding: 30px; border-radius: 10px; color: white; text-align: center;">
+                    Background positioned & sized
+                </div>
+            </div>
+        </div>
+
+        <div id="background-blend-mode" class="main2">
+            <div class="prop-badge">background-blend-mode | background-clip | background-attachment</div>
+            <h3>Blend Mode, Clip & Attachment</h3>
+            <pre>.element {
+    background-blend-mode: multiply;
+    background-clip: border-box;
+    background-attachment: fixed;
+}</pre>
+            <div class="demo-box">
+                <div style="background: linear-gradient(45deg, red, blue) padding-box; background-blend-mode: screen; padding: 20px; border-radius: 10px; color: white;">
+                    Blend mode effect
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== BORDER SECTION ==================== -->
+    <div id="border" class="content-box">
+        <h2>🔲 BORDER PROPERTIES</h2>
+
+        <div id="border" class="main">
+            <div class="prop-badge">border | border-radius</div>
+            <h3>Border and Border Radius</h3>
+            <pre>.element {
+    border: 3px solid #34d399;
+    border-radius: 15px;
+}</pre>
+            <div class="demo-box">
+                <div style="border: 3px solid #34d399; border-radius: 15px; padding: 20px; text-align: center;">
+                    Rounded border
+                </div>
+            </div>
+        </div>
+
+        <div id="border-bottom" class="main1">
+            <div class="prop-badge">border-top | border-right | border-bottom | border-left</div>
+            <h3>Individual Border Sides</h3>
+            <pre>.element {
+    border-block-start: 2px solid #f87171;
+    border-inline-end: 2px solid #34d399;
+    border-block-end: 2px solid #facc15;
+    border-inline-start: 2px solid #f87171;
+}</pre>
+            <div class="demo-box">
+                <div style="border-block-start: 2px solid #f87171; border-inline-end: 2px solid #34d399; border-block-end: 2px solid #facc15; border-inline-start: 2px solid #f87171; padding: 20px; text-align: center;">
+                    Different color on each side
+                </div>
+            </div>
+        </div>
+
+        <div id="border-image" class="main2">
+            <div class="prop-badge">border-image | border-collapse | border-spacing</div>
+            <h3>Border Image & Table Borders</h3>
+            <pre>table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.element {
+    border-image: url(border.png) 30 round;
+}</pre>
+            <div class="demo-box">
+                <table style="border-collapse: collapse; inline-size: 100%;">
+                    <tr><th style="border:1px solid #ddd; padding:8px;">Header 1</th><th style="border:1px solid #ddd; padding:8px;">Header 2</th></tr>
+                    <tr><td style="border:1px solid #ddd; padding:8px;">Cell 1</td><td style="border:1px solid #ddd; padding:8px;">Cell 2</td></tr>
+                </table>
+                <p><small>border-collapse: collapse merges borders</small></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== BOX MODEL SECTION ==================== -->
+    <div id="box" class="content-box">
+        <h2>📦 BOX MODEL PROPERTIES</h2>
+
+        <div id="margin" class="main">
+            <div class="prop-badge">margin | padding</div>
+            <h3>Margin and Padding</h3>
+            <pre>.element {
+    margin: 20px;
+    padding: 15px;
+}</pre>
+            <div class="demo-box">
+                <div style="background: #e5e7eb; padding: 15px;">
+                    <div style="background: #34d399; padding: 15px; color: white; border-radius: 8px;">
+                        Inner content
+                        <div style="background: rgba(255,255,255,0.3); padding: 10px; margin-block-start: 10px; border-radius: 5px;">Nested</div>
+                    </div>
+                </div>
+                <p><small>Orange = margin area | Green = padding area</small></p>
+            </div>
+        </div>
+
+        <div id="width" class="main1">
+            <div class="prop-badge">width | height | max-width | min-width | max-height | min-height</div>
+            <h3>Width and Height Properties</h3>
+            <pre>.element {
+    inline-size: 200px;
+    block-size: 100px;
+    max-inline-size: 100%;
+    min-block-size: 50px;
+}</pre>
+            <div class="demo-box">
+                <div style="inline-size: 200px; block-size: 100px; background: #34d399; color: white; display: flex; align-items: center; justify-content: center; border-radius: 10px; margin: 0 auto;">
+                    200x100px
+                </div>
+            </div>
+        </div>
+
+        <div id="box-sizing" class="main2">
+            <div class="prop-badge">box-sizing | box-shadow</div>
+            <h3>Box Sizing & Shadow</h3>
+            <pre>.element {
+    box-sizing: border-box; /* includes padding in width */
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+}</pre>
+            <div class="demo-box">
+                <div style="box-sizing: border-box; inline-size: 200px; padding: 20px; background: #34d399; color: white; border-radius: 10px; box-shadow: 5px 5px 15px rgba(0,0,0,0.2); margin: 0 auto;">
+                    With shadow
+                </div>
+            </div>
+        </div>
+
+        <div id="outline" class="main">
+            <div class="prop-badge">outline | outline-color | outline-offset | outline-style | outline-width</div>
+            <h3>Outline (outside border)</h3>
+            <pre>.element {
+    outline: 3px solid #f87171;
+    outline-offset: 5px;
+}</pre>
+            <div class="demo-box">
+                <div style="border: 2px solid #34d399; padding: 15px; outline: 3px solid #f87171; outline-offset: 5px; text-align: center; margin: 10px;">
+                    Element with outline (outside border)
+                </div>
+            </div>
+        </div>
+
+        <div id="overflow" class="main1">
+            <div class="prop-badge">overflow | resize | visibility</div>
+            <h3>Overflow, Resize & Visibility</h3>
+            <pre>.element {
+    overflow: auto; /* hidden | scroll | visible */
+    resize: both;
+    visibility: visible; /* hidden | collapse */
+}</pre>
+            <div class="demo-box">
+                <div style="inline-size: 150px; block-size: 80px; background: #e5e7eb; overflow: auto; padding: 10px; margin: 0 auto;">
+                    This text is too long to fit in the box so it will scroll. Lorem ipsum dolor sit amet.
+                </div>
+                <p><small>overflow: auto creates scrollbar</small></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== TEXT & FONT SECTION ==================== -->
+    <div id="text" class="content-box">
+        <h2>📝 TEXT & FONT PROPERTIES</h2>
+
+        <div id="color" class="main">
+            <div class="prop-badge">color | font-family | font-size | font-weight | font-style</div>
+            <h3>Basic Text Styling</h3>
+            <pre>p {
+    color: #f87171;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}</pre>
+            <div class="demo-box">
+                <p style="color: #f87171; font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; font-style: italic;">
+                    Colored, bold, italic text
+                </p>
+            </div>
+        </div>
+
+        <div id="text-align" class="main1">
+            <div class="prop-badge">text-align | text-decoration | text-transform</div>
+            <h3>Text Alignment & Decoration</h3>
+            <pre>.element {
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}</pre>
+            <div class="demo-box">
+                <p style="text-align: center; text-decoration: underline; text-transform: uppercase;">
+                    Centered Underlined Uppercase Text
+                </p>
+            </div>
+        </div>
+
+        <div id="text-shadow" class="main2">
+            <div class="prop-badge">text-shadow | letter-spacing | word-spacing | line-height</div>
+            <h3>Text Effects and Spacing</h3>
+            <pre>.element {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 1.8;
+}</pre>
+            <div class="demo-box">
+                <p style="text-shadow: 2px 2px 4px rgba(0,0,0,0.2); letter-spacing: 2px; word-spacing: 5px; line-height: 1.8;">
+                    Text with shadow, spaced letters and words, and increased line height
+                </p>
+            </div>
+        </div>
+
+        <div id="text-indent" class="main">
+            <div class="prop-badge">text-indent | white-space</div>
+            <h3>Text Indent & White Space</h3>
+            <pre>.element {
+    text-indent: 50px;
+    white-space: nowrap; /* pre | pre-wrap | pre-line */
+}</pre>
+            <div class="demo-box">
+                <p style="text-indent: 50px;">
+                    This paragraph has a 50px first-line indent.
+                </p>
+                <div style="white-space: nowrap; overflow-x: auto; background: #e5e7eb; padding: 10px;">
+                    This text will not wrap until you scroll horizontally
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== POSITIONING SECTION ==================== -->
+    <div id="position" class="content-box">
+        <h2>📍 POSITIONING PROPERTIES</h2>
+
+        <div id="position" class="main">
+            <div class="prop-badge">position | top | right | bottom | left | z-index</div>
+            <h3>Position & Z-Index</h3>
+            <pre>.relative {
+    position: relative;
+    inset-block-start: 20px;
+    inset-inline-start: 20px;
+}
+.absolute {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+}
+.fixed {
+    position: fixed;
+    inset-block-end: 0;
+}
+.z-high {
+    position: relative;
+    z-index: 100;
+}</pre>
+            <div class="demo-box" style="position: relative; block-size: 200px;">
+                <div style="position: absolute; inset-block-start: 10px; inset-inline-start: 10px; background: #34d399; padding: 10px; border-radius: 8px; color: white;">Absolute (inset-block-start:10, inset-inline-start:10)</div>
+                <div style="position: absolute; inset-block-end: 10px; inset-inline-end: 10px; background: #f87171; padding: 10px; border-radius: 8px; color: white;">Absolute (inset-block-end:10, inset-inline-end:10)</div>
+                <div style="position: relative; inset-block-start: 60px; background: #facc15; padding: 10px; border-radius: 8px; text-align: center;">Relative (inset-block-start:60px)</div>
+            </div>
+        </div>
+
+        <div id="float" class="main1">
+            <div class="prop-badge">float | clear</div>
+            <h3>Float and Clear</h3>
+            <pre>.float-left {
+    float: inline-start;
+}
+.clearfix {
+    clear: both;
+}</pre>
+            <div class="demo-box">
+                <div style="float: inline-start; inline-size: 100px; background: #34d399; padding: 15px; margin: 5px; color: white; border-radius: 8px;">Float Left</div>
+                <div style="float: inline-start; inline-size: 100px; background: #f87171; padding: 15px; margin: 5px; color: white; border-radius: 8px;">Float Left</div>
+                <div style="clear: both;"></div>
+                <p><small>Both floated left | clear: both stops floating</small></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== EFFECTS SECTION ==================== -->
+    <div id="effects" class="content-box">
+        <h2>✨ TRANSFORM, TRANSITION & EFFECTS</h2>
+
+        <div id="transform" class="main">
+            <div class="prop-badge">transform</div>
+            <h3>Transform (rotate, scale, translate, skew)</h3>
+            <pre>.element {
+    transform: rotate(45deg) scale(1.2) translateX(50px) skew(10deg);
+}</pre>
+            <div class="demo-box">
+                <div style="background: #34d399; inline-size: 80px; block-size: 80px; margin: 20px auto; border-radius: 10px; transform: rotate(15deg) scale(1.1);">
+                </div>
+                <p><small>Rotated 15deg and scaled 1.1x</small></p>
+            </div>
+        </div>
+
+        <div id="transition" class="main1">
+            <div class="prop-badge">transition</div>
+            <h3>Transition (smooth changes)</h3>
+            <pre>.element {
+    transition: all 0.3s ease-in-out;
+}
+.element:hover {
+    transform: scale(1.1);
+    background: #f87171;
+}</pre>
+            <div class="demo-box">
+                <div style="background: #34d399; inline-size: 100px; block-size: 100px; margin: 20px auto; border-radius: 10px; transition: all 0.3s ease-in-out; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'; this.style.background='#f87171';" onmouseout="this.style.transform='scale(1)'; this.style.background='#34d399';">
+                </div>
+                <p><small>Hover over the box → smooth transition</small></p>
+            </div>
+        </div>
+
+        <div id="opacity" class="main2">
+            <div class="prop-badge">opacity | filter | backdrop-filter | cursor</div>
+            <h3>Opacity, Filters & Cursor</h3>
+            <pre>.element {
+    opacity: 0.8;
+    filter: blur(5px) brightness(1.2);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+}</pre>
+            <div class="demo-box">
+                <div style="opacity: 0.7; background: #34d399; padding: 15px; border-radius: 8px; margin: 10px 0; color: white;">Opacity: 0.7 (70% visible)</div>
+                <div style="filter: blur(2px); background: #f87171; padding: 15px; border-radius: 8px; margin: 10px 0; color: white;">Blur filter applied</div>
+                <div style="cursor: pointer; background: #facc15; padding: 15px; border-radius: 8px; text-align: center;">Hover - cursor: pointer</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== OTHER PROPERTIES ==================== -->
+    <div id="other" class="content-box">
+        <h2>📋 OTHER IMPORTANT PROPERTIES</h2>
+
+        <div id="display" class="main">
+            <div class="prop-badge">display</div>
+            <h3>Display Values</h3>
+            <pre>.block { display: block; }
+.inline { display: inline; }
+.inline-block { display: inline-block; }
+.flex { display: flex; }
+.grid { display: grid; }
+.none { display: none; }</pre>
+            <div class="demo-box">
+                <div style="background: #34d399; display: block; padding: 5px; margin: 5px; color: white; border-radius: 5px;">block - full width</div>
+                <span style="background: #f87171; display: inline; padding: 5px; margin: 5px; color: white; border-radius: 5px;">inline</span>
+                <span style="background: #facc15; display: inline; padding: 5px; margin: 5px; color: white; border-radius: 5px;">inline</span>
+                <div><small>Block takes full width | Inline takes content width</small></div>
+            </div>
+        </div>
+
+        <div id="list-style" class="main1">
+            <div class="prop-badge">list-style | list-style-type</div>
+            <h3>List Styling</h3>
+            <pre>ul {
+    list-style-type: square; /* disc | circle | none */
+    list-style-position: inside;
+}</pre>
+            <div class="demo-box">
+                <ul style="list-style-type: square; background: #e5e7eb; padding: 15px; border-radius: 10px;">
+                    <li>Square bullet point</li>
+                    <li>Another item</li>
+                    <li>Third item</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="scroll-behavior" class="main2">
+            <div class="prop-badge">scroll-behavior | vertical-align | caption-side</div>
+            <h3>Smooth Scroll, Alignment & Caption</h3>
+            <pre>html {
+    scroll-behavior: smooth;
+}
+img {
+    vertical-align: middle;
+}
+caption {
+    caption-side: bottom;
+}</pre>
+            <div class="demo-box">
+                <p><small>scroll-behavior: smooth - animates scroll jumps</small></p>
+                <p><small>vertical-align: middle - aligns inline elements</small></p>
+                <table style="inline-size: 100%; border: 1px solid #ddd;">
+                    <caption style="caption-side: bottom;">Table caption at bottom</caption>
+                    <tr><th>Column 1</th><th>Column 2</th></tr>
+                    <tr><td>Data 1</td><td>Data 2</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p><strong>© 2026 Code in One. All rights reserved.</strong></p>
+</footer>
+
+<script>
+function scrollToSection(sectionId) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+        element.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest'
+        });
+        
+        // Optional: Add highlight effect///////////////////////////////////////
+        element.style.transition = 'all 0.3s ease';
+        element.style.boxShadow = '0 0 0 3px rgba(248,113,113,0.5)';
+        setTimeout(() => {
+            element.style.boxShadow = '';
+        }, 1000);
+    } else {
+        console.log("Section not found: " + sectionId);
+    }
+}
+</script>
+</body>
+</html>
